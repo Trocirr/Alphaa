@@ -129,13 +129,8 @@ async def server(ctx):
     embed.set_footer(text=txt, icon_url=ctx.message.author.avatar_url)
     await client.say(embed=embed)
 	
+	
 @client.command(pass_context=True)
-async def xdd(ctx):
-	embed = discord.Embed(description="__About Defender__", color=0x00ff00)
-	embed.add_field(name=
-	
-	
-@client.command(pass_context=True, description="Shows the info of the mentioned user.")
 async def info(ctx, user: discord.Member):
     embed = discord.Embed(title="{}'s info".format(user.name), description="Here's what I could find:", color=0x00ff00)
     embed.add_field(name="Name", value=user.name, inline=True)
