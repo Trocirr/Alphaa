@@ -79,7 +79,7 @@ async def purge(ctx, *, amount : int):
             messages.append(message)
          await client.delete_messages(messages)
     else:
-        await client.say("You don't have permission to use this command.")
+        await client.say("You do not have permissions to use this command.")
 	 
 @client.command(pass_context=True)
 async def dm(ctx, member: discord.Member, message: str):
@@ -149,8 +149,8 @@ async def info(ctx, user: discord.Member):
 	
 @client.command(pass_context=True)
 async def about(ctx):
-    embed = discord.Embed(title="__About BFL__", description="© 2018 BFL Bot All Rights Reserved", color=0x00ff00)
-    embed.add_field(name="Original Creators", value="<@399567243744116738> & <@293447483818901504>")
+    embed = discord.Embed(title="__About Alpha__", description="© 2018 Alpha Bot All Rights Reserved", color=0x00ff00)
+    embed.add_field(name="Original Creators", value="Trocir#1816 & Mes#1807")
     embed.add_field(name="Server count", value=str(len(client.servers)))
     embed.add_field(name="User count", value=str(len(list(client.get_all_members()))))
     embed.add_field(name="Channel count",value=str(len(list(client.get_all_channels()))))
@@ -164,162 +164,7 @@ async def about(ctx):
     embed.set_footer(text=txt, icon_url=ctx.message.author.avatar_url) 
     await client.say(embed=embed)
 	
-	
-@client.command(pass_context=True)
-async def trocir(ctx):
-    embed = discord.Embed(title="__Trocir's profile__ :flag_rs:", description="", color=0x2874A6)
-    embed.add_field(name="Joined", value="7th May 2018")
-    embed.add_field(name="Goals", value="0")
-    embed.add_field(name="Assists", value="0")
-    embed.add_field(name="Own Goals", value="0")
-    embed.set_thumbnail(url="https://media.discordapp.net/attachments/443418563160571944/446395067373191169/Picture1.png?width=868&height=646")
-    await client.say(embed=embed)
-	
 
-@client.command(pass_context=True)
-async def microhype(ctx):
-    embed = discord.Embed(title="__MicroHype's profile__ :flag_gb:", description="", color=0x2874A6)
-    embed.add_field(name="Joined", value="7th May 2018")
-    embed.add_field(name="Goals", value="0")
-    embed.add_field(name="Assists", value="0")
-    embed.add_field(name="Own Goals", value="0")
-    embed.set_thumbnail(url="https://media.discordapp.net/attachments/443418563160571944/446395067373191169/Picture1.png?width=868&height=646")
-    await client.say(embed=embed)	
-	
-	
-@client.command(pass_context=True)
-async def frozenkiller(ctx):
-    embed = discord.Embed(title="__frozenkiller's profile__ :flag_nl:", description="", color=0x2874A6)
-    embed.add_field(name="Joined", value="7th May 2018")
-    embed.add_field(name="Goals", value="0")
-    embed.add_field(name="Assists", value="0")
-    embed.add_field(name="Own Goals", value="0")
-    embed.set_thumbnail(url="https://media.discordapp.net/attachments/443418563160571944/446395067373191169/Picture1.png?width=868&height=646")
-    await client.say(embed=embed)
-	
-
-@client.command(pass_context=True)
-async def avenger434(ctx):
-    embed = discord.Embed(title="__Avenger434's profile__ :flag_my:", description="", color=0x2874A6)
-    embed.add_field(name="Joined", value="8th May 2018")
-    embed.add_field(name="Goals", value="0")
-    embed.add_field(name="Assists", value="0")
-    embed.add_field(name="Own Goals", value="0")
-    embed.set_thumbnail(url="https://media.discordapp.net/attachments/443418563160571944/446395067373191169/Picture1.png?width=868&height=646")
-    await client.say(embed=embed)
-	
-	
-@client.command(pass_context=True)
-async def mhmmyeeesss(ctx):
-    embed = discord.Embed(title="__MhmmYeeesss's profile__ :flag_us:", description="", color=0x2874A6)
-    embed.add_field(name="Joined", value="7th May 2018")
-    embed.add_field(name="Goals", value="0")
-    embed.add_field(name="Assists", value="0")
-    embed.add_field(name="Own Goals", value="0")
-    embed.set_thumbnail(url="https://media.discordapp.net/attachments/443418563160571944/446395067373191169/Picture1.png?width=868&height=646")
-    await client.say(embed=embed)	
-	
-	
-@client.command(pass_context=True)
-async def acquah(ctx):
-    embed = discord.Embed(title="__Acquah's profile__ :flag_it:", description="", color=0x2874A6)
-    embed.add_field(name="Joined", value="7th May 2018")
-    embed.add_field(name="Goals", value="0")
-    embed.add_field(name="Assists", value="0")
-    embed.add_field(name="Own Goals", value="0")
-    embed.set_thumbnail(url="https://media.discordapp.net/attachments/443418563160571944/446395067373191169/Picture1.png?width=868&height=646")
-    await client.say(embed=embed)	
-	
-	
-@client.command(pass_context=True)
-async def reddragon6(ctx):
-    embed = discord.Embed(title="__RedDragon6's profile__ :flag_pk:", description="", color=0x2874A6)
-    embed.add_field(name="Joined", value="8th May 2018")
-    embed.add_field(name="Goals", value="0")
-    embed.add_field(name="Assists", value="0")
-    embed.add_field(name="Own Goals", value="0")
-    embed.set_thumbnail(url="https://media.discordapp.net/attachments/443418563160571944/446395067373191169/Picture1.png?width=868&height=646")
-    await client.say(embed=embed)
-	
-	
-@client.command(pass_context=True)
-async def alex2810(ctx):
-    embed = discord.Embed(title="__Alex2810's profile__ :flag_ca:", description="", color=0x2874A6)
-    embed.add_field(name="Joined", value="8th May 2018")
-    embed.add_field(name="Goals", value="0")
-    embed.add_field(name="Assists", value="0")
-    embed.add_field(name="Own Goals", value="0")
-    embed.set_thumbnail(url="https://media.discordapp.net/attachments/443418563160571944/446395067373191169/Picture1.png?width=868&height=646")
-    await client.say(embed=embed)	
-	
-	
-@client.command(pass_context=True)
-async def nahojaa(ctx):
-    embed = discord.Embed(title="__Naho jaa's profile__ :flag_br:", description="", color=0x2874A6)
-    embed.add_field(name="Joined", value="9th May 2018")
-    embed.add_field(name="Goals", value="0")
-    embed.add_field(name="Assists", value="0")
-    embed.add_field(name="Own Goals", value="0")
-    embed.set_thumbnail(url="https://media.discordapp.net/attachments/443418563160571944/446395067373191169/Picture1.png?width=868&height=646")
-    await client.say(embed=embed)	
-	
-	
-@client.command(pass_context=True)
-async def numbskullian(ctx):
-    embed = discord.Embed(title="__Numb Skullian's profile__ :flag_gb:", description="", color=0x2874A6)
-    embed.add_field(name="Joined", value="9th May 2018")
-    embed.add_field(name="Goals", value="0")
-    embed.add_field(name="Assists", value="0")
-    embed.add_field(name="Own Goals", value="0")
-    embed.set_thumbnail(url="https://media.discordapp.net/attachments/443418563160571944/446395067373191169/Picture1.png?width=868&height=646")
-    await client.say(embed=embed)	
-	
-
-@client.command(pass_context=True)
-async def nasean79(ctx):
-    embed = discord.Embed(title="__nasean79's profile__ :flag_us:", description="", color=0x2874A6)
-    embed.add_field(name="Joined", value="10th May 2018")
-    embed.add_field(name="Goals", value="0")
-    embed.add_field(name="Assists", value="0")
-    embed.add_field(name="Own Goals", value="0")
-    embed.set_thumbnail(url="https://media.discordapp.net/attachments/443418563160571944/446395067373191169/Picture1.png?width=868&height=646")
-    await client.say(embed=embed)		
-		
-	
-@client.command(pass_context=True)
-async def commanderjoash(ctx):
-    embed = discord.Embed(title="__CommanderJoash's profile__ :flag_us:", description="", color=0x2874A6)
-    embed.add_field(name="Joined", value="8th May 2018")
-    embed.add_field(name="Goals", value="0")
-    embed.add_field(name="Assists", value="0")
-    embed.add_field(name="Own Goals", value="0")
-    embed.set_thumbnail(url="https://media.discordapp.net/attachments/443418563160571944/446395067373191169/Picture1.png?width=868&height=646")
-    await client.say(embed=embed)	
-	
-	
-@client.command(pass_context=True)
-async def aggthescorer(ctx):
-    embed = discord.Embed(title="__AggTheScorer__ :flag_gr:", description="", color=0x2874A6)
-    embed.add_field(name="Joined", value="15th May 2018")
-    embed.add_field(name="Goals", value="0")
-    embed.add_field(name="Assists", value="0")
-    embed.add_field(name="Own Goals", value="0")
-    embed.set_thumbnail(url="https://media.discordapp.net/attachments/443418563160571944/446395067373191169/Picture1.png?width=868&height=646")
-    await client.say(embed=embed)	
-	
-	
-@client.command(pass_context=True)
-async def records(ctx):
-    embed = discord.Embed(title="__BFL Records__", description="Our Football Records", color=0x2874A6)
-    embed.add_field(name="Biggest Win", value="Team 0-0 Team")
-    embed.add_field(name="Most Goals in a match", value="Player - 0", inline = False)
-    embed.add_field(name="Most Assists in a match", value="Player - 0", inline = False)
-    embed.add_field(name="Most Goals of all time", value="Player - 0", inline = False)
-    embed.add_field(name="Most Assists of all time", value="Player - 0", inline = False)
-    embed.set_thumbnail(url="https://media.discordapp.net/attachments/443418563160571944/443423107215261697/Feed_Me_Bonk_League.png?width=462&height=420")
-    await client.say(embed=embed)
-	
-	
 	
 @client.command(pass_context=True)
 async def avatar(ctx, user: discord.Member):
