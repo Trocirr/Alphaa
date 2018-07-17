@@ -135,7 +135,7 @@ async def xdd(ctx):
 	embed.add_field(name=
 	
 	
-@client.command(pass_context=True, description='Shows the info of the mentioned user.')
+@client.command(pass_context=True, description="Shows the info of the mentioned user.")
 async def info(ctx, user: discord.Member):
     embed = discord.Embed(title="{}'s info".format(user.name), description="Here's what I could find:", color=0x00ff00)
     embed.add_field(name="Name", value=user.name, inline=True)
