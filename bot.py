@@ -112,7 +112,7 @@ async def idk(ctx):
 	
 @client.command(pass_context=True, description='Shows the server info.')
 async def server(ctx):
-    embed = discord.Embed(description="Here's what I could find:", color=0x00ff00)
+    embed = discord.Embed(description="<:Members:468729005273776128> Here's what I could find:", color=0x00ff00)
     embed.add_field(name="Name", value=ctx.message.server.name)
     embed.add_field(name="Owner", value=ctx.message.server.owner)
     embed.add_field(name="Region", value=ctx.message.server.region)
