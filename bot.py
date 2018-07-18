@@ -53,7 +53,7 @@ async def mute(ctx, member: discord.Member):
         embed=discord.Embed(title="User Muted!", description="**{0}** was muted by **{1}**!".format(member, ctx.message.author), color=0xff00f6)
         await client.say(embed=embed)
      else:
-        embed=discord.Embed(title="Permission Denied.", description="You don't have permission to use this command.", color=0xff00f6)
+        embed=discord.Embed(title="Permission Denied.", description="<:alphaError:468832634542227477> You do not have permissions to use this command.", color=0xff00f6)
         await client.say(embed=embed)	
 
 
@@ -79,7 +79,7 @@ async def purge(ctx, *, amount : int):
             messages.append(message)
          await client.delete_messages(messages)
     else:
-        await client.say("You do not have permissions to use this command.")
+        await client.say("<:alphaError:468832634542227477> You do not have permissions to use this command.")
 	 
 @client.command(pass_context=True)
 async def dm(ctx, member: discord.Member, message: str):
