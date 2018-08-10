@@ -94,7 +94,7 @@ async def exdee(ctx):
 @client.command(pass_context=True)
 async def idk(ctx):
     embed = discord.Embed(description="", color=0xC9C9C9)
-    embed.add_field(name="Roles", value="<@&469176149126283274> - The Alpha Bot \n <@&469177339243266048> - Staff Team of the server \n <@&469179503717908500> - The contributors \n <@&469177384487223297> - Tag them if you need help \n <@&469179298901917704 - The police of the server \n <@&477596976096083998> - Default role \n <@&469180548338810882> - Role for our bots")
+    embed.add_field(name="Roles", value="<@&469176149126283274> - The Alpha Bot \n <@&469177339243266048> - Staff Team of the server \n <@&469179503717908500> - The contributors \n <@&469177384487223297> - Tag them if you need help \n <@&469179298901917704> - The police of the server \n <@&477596976096083998> - Default role \n <@&469180548338810882> - Role for our bots")
     await client.say(embed=embed)	
 	
 	
