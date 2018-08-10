@@ -60,14 +60,7 @@ async def mute(ctx, member: discord.Member):
 @client.command(pass_context=True)
 async def randomnumber(ctx):
      await client.say(random.randint(1,101))	
-	 
-@client.command(pass_context=True)
-async def lol(ctx):
-		await client.say("shut up u retard <a:TrollDance:456805020143190020> <a:Success:456782999607050240> <a:Thinking360:456789181226680331> <a:thinkloading:456846926994997259>")	 
-	 
-	 
-
-		
+	 		
 	 
 @client.command(pass_context=True)
 async def purge(ctx, *, amount : int):
@@ -82,31 +75,26 @@ async def purge(ctx, *, amount : int):
         await client.say("<:alphaError:468832634542227477> You do not have permissions to use this command.")
 	 
 @client.command(pass_context=True)
-async def dm(ctx, member: discord.Member, message: str):
+async def dmm(ctx, member: discord.Member, message: str):
     await client.send_message(member, message)	
 	
 @client.command(pass_context=True)
 async def idk2(ctx):
-	embed = discord.Embed(title="Welcome to **Bonk.io Football League**!", description="BFL is launched in January of 2018. This is the official discord server of Bonk.io Football League. The league does not use any extensions or mods. You can talk about anything here as long as it isn't disrespectful.", color=0xFF8C00)
+	embed = discord.Embed(title="Welcome to Alpha® Support Server!", description="Alpha® is launched in August of 2018. This is the official discord server of Alpha®. You can talk about anything here as long as it isn't disrespectful.", color=0xFF8C00)
 	await client.say(embed=embed)	
 	
 
 @client.command(pass_context=True)
 async def exdee(ctx):
     embed = discord.Embed(description="", color=0xC9C9C9)
-    embed.add_field(name="Rules", value="You can talk about anything here as long as it isn't disrespectful. If you have a problem with anyone or anything in this server, please DM the Staff about it. \n \n 1. Rudeness, harassment, and immaturity will not be tolerated. \n 2. Porn and otherwise NSFW/NSFL content is prohibited. \n 3. No discussion about highly illegal activity. \n 4. Copyrighted and other unlawful material is prohibited, such as links to illegal content. \n 5. Advertising and promoting is prohibited. Don't even bother posting invite links because the bots will delete them anyway. \n 6. <#443154096787161092> is our main channel. Keep it clean. \n 7. No (random) links in the general chat <#443154096787161092> unless a moderator or higher lets you!")
+    embed.add_field(name="Rules", value="You can talk about anything here as long as it isn't disrespectful. If you have a problem with anyone or anything in this server, please DM the Staff about it. \n \n 1. Rudeness, harassment, and immaturity will not be tolerated. \n 2. Porn and otherwise NSFW/NSFL content is prohibited. \n 3. No discussion about highly illegal activity. \n 4. Copyrighted and other unlawful material is prohibited, such as links to illegal content. \n 5. Advertising and promoting is prohibited. Don't even bother posting invite links because the bots will delete them anyway. \n 6. <#469175683784900630> is our main channel. Keep it clean. \n 7. No (random) links in the general chat <#469175683784900630> unless a moderator or higher lets you!")
     await client.say(embed=embed)
-	
-@client.command(pass_context=True)
-async def idk5(ctx):
-    embed = discord.Embed(description="", color=0xC9C9C9)
-    embed.add_field(name="pro", value="im good in this as serbia in world cup")
-    await client.say(embed=embed)	
+		
 	
 @client.command(pass_context=True)
 async def idk(ctx):
     embed = discord.Embed(description="", color=0xC9C9C9)
-    embed.add_field(name="Roles", value="<@&443070361450446848> - Staff Team of the league \n <@&443436497350164490> - Referees, tag them if you need referee! \n <@&443074283837718546> - Official BFL Bot \n <@&443070319045902357> - BFL League Players \n <@&443070027743232001> - Default role \n <@&443070606657716234> - Role for our bots")
+    embed.add_field(name="Roles", value="<@&469176149126283274> - The Alpha Bot \n <@&469177339243266048> - Staff Team of the server \n <@&469179503717908500> - The contributors \n <@&469177384487223297> - Tag them if you need help \n <@&469179298901917704 - The police of the server \n <@&477596976096083998> - Default role \n <@&469180548338810882> - Role for our bots")
     await client.say(embed=embed)	
 	
 	
@@ -149,13 +137,13 @@ async def info(ctx, user: discord.Member):
 	
 @client.command(pass_context=True)
 async def about(ctx):
-    embed = discord.Embed(title="__About Alpha__", description="© 2018 Alpha Bot All Rights Reserved", color=0x00ff00)
+    embed = discord.Embed(title="__About Alpha®__", description="© 2018 Alpha® Bot All Rights Reserved", color=0x00ff00)
     embed.add_field(name="Original Creators", value="Trocir#1816 & Mes#1807")
     embed.add_field(name="Server count", value=str(len(client.servers)))
     embed.add_field(name="User count", value=str(len(list(client.get_all_members()))))
     embed.add_field(name="Channel count",value=str(len(list(client.get_all_channels()))))
     embed.add_field(name="API", value="Python")
-    embed.set_thumbnail(url='https://media.discordapp.net/attachments/438003912184692738/438306520317427712/Test.png?width=334&height=341')
+    embed.set_thumbnail(url='https://images-ext-2.discordapp.net/external/p9wvkHrqOi1jHV7Gyrld_ttGUXgeenimIzNLZQUf6PM/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/432607914432135169/a394fefee1f3b6101c3c229e9f2a4eeb.webp?width=646&height=646')
     utc_dt = datetime.now(timezone.utc)
     p = utc_dt.strftime('     Time - %H:%M:%S | Date - %d/%m/%Y')
     utc = str(p)    
