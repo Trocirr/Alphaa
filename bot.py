@@ -214,12 +214,9 @@ async def choose(ctx,message):
 @client.command(pass_context=True)
 @commands.cooldown(1, 5, commands.BucketType.user)
 async def ping(ctx):
-    channel = ctx.message.channel
-    t1 = time.perf_counter()
-    await client.send_typing(channel)
-    t2 = time.perf_counter()
-    embed=discord.Embed(title=None, description=':ping_pong: Pong! `{}ms`'.format(round((t2-t1)*1000)), color=0x2874A6)
-    await client.say(embed=embed)
+	await client.say(":ping_pong: |"random.randint(1,101))	
+
+
 
 @client.command(pass_context=True)
 @commands.cooldown(1, 10, commands.BucketType.user)
