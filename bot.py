@@ -214,7 +214,7 @@ async def choose(ctx,message):
 @client.command(pass_context=True)
 @commands.cooldown(1, 5, commands.BucketType.user)
 async def ping(ctx):
-	await client.say(":ping_pong: |"random.randint(1,101))	
+	await client.say("Pong! :ping_pong:")
 
 
 
