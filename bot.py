@@ -6,7 +6,6 @@ import time
 import random
 import os
 import requests
-import urbandict
 
 from datetime import datetime, timezone
 
@@ -231,20 +230,6 @@ async def meme(ctx):
 	embed = discord.Embed(description="Random Meme", color=0x00BFFF)
 	embed.set_image(url=m)
 	await client.say(embed=embed)
-
-	
-@client.command()
-async def urban(*, word: str):
-	try:
-		defi = urbandict.define(word)
-		definition = defi[0]['def']
-		example = defi[0]['example']
-		embed = discord.Embed(title=word, description=definition, color=0x0062f4)
-		embed.add_field(name="Example", value=example, inline=False)
-		await client.say(embed=embed)
-	except:
-		await client.say(":exclamation: Error. No definition found.")
-			
 
 
 client.run(str(os.environ.get('BOT_TOKEN')))
