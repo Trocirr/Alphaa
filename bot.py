@@ -6,6 +6,7 @@ import time
 import random
 import os
 import requests
+import urbandict
 
 from datetime import datetime, timezone
 
