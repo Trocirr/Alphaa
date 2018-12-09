@@ -66,10 +66,28 @@ async def randomnumber(ctx):
 async def kick(ctx, userName: discord.User):
     await client.kick(userName)
 
-@client.command()
-@commands.has_permissions(kick_members=True)
-async def kickk(ctx, user: discord.Member, *, reason):
-  await user.kick(reason=reason)
+@client.command(pass_context=True)
+async def why(ctx, user: discord.Member):
+    await client.say("Your name is {}".format(user.name))
+    await client.say("Your status is {}".format(user.status))
+    await client.say("You joined at {}".format(user.joined_at))
+
+@client.command(pass_context=True)
+async def ban(self, ctx, user:discord.Member, *, reason:str=None):
+        """Bans the specified user from the server"""
+        mod_role_name = read_data_entry(ctx.message.server.id, "Bot Mod")
+        mod = discord.utils.get(ctx.message.author.roles, name=mod_role_name)
+        if not mod:
+            await self.bot.say("You must have the `{}` role in order to use that command.".format(mod_role_name))
+            return
+        if reason is None:
+            reason = "No reason was specified"
+        try:
+            await self.bot.ban(user, delete_message_days=0)
+        except discord.errors.Forbidden:
+            await self.bot.say("I either do not have the `Ban Members` permission or my highest role is not higher than that users highest role.")
+            return
+        await self.bot.say("Successfully banned `{}`".format(user))
 	 
 @client.command(pass_context=True)
 async def purge(ctx, *, amount : int):
