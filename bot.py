@@ -63,10 +63,10 @@ async def randomnumber(ctx):
 
 
 @client.command(pass_context=true)
-@commands.has_permissions(ban_members=True)
-async def ban(ctx, userName: discord.User):
-await client.ban(userName)
-print ("User banned")
+	if ctx.message.author.server_permissions.administrator:
+	async def ban(ctx, userName: discord.User):
+	await client.ban(userName)
+	await client.say("User banned")
 	 		
 	 
 @client.command(pass_context=True)
