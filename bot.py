@@ -66,7 +66,10 @@ async def randomnumber(ctx):
 async def kick(ctx, userName: discord.User):
     await client.kick(userName)
 
-
+@client.command()
+@commands.has_permissions(kick_members=True)
+async def kickk(ctx, user: discord.Member, *, reason):
+  await client.kick(reason=reason)
 	 
 @client.command(pass_context=True)
 async def purge(ctx, *, amount : int):
