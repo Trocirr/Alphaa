@@ -61,12 +61,11 @@ async def mute(ctx, member: discord.Member):
 async def randomnumber(ctx):
      await client.say(random.randint(1,101))	
 
-@client.command(pass_context=True)
+@client.command(pass_context = True)
 @commands.has_permissions(kick_members=True)
-async def kick(ctx):
-    """Kick A User from server"""
-    await client.kick('userid')
-    await client.say("User has been kicked successfully!")
+async def kick(ctx, userName: discord.User):
+    await client.kick(userName)
+
 	 
 @client.command(pass_context=True)
 async def purge(ctx, *, amount : int):
