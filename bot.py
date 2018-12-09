@@ -60,6 +60,13 @@ async def mute(ctx, member: discord.Member):
 @client.command(pass_context=True)
 async def randomnumber(ctx):
      await client.say(random.randint(1,101))	
+
+
+@client.command(pass_context=true)
+@commands.has_permissions(ban_members=True)
+async def ban(ctx, userName: discord.User):
+await client.ban(userName)
+print ("User banned")
 	 		
 	 
 @client.command(pass_context=True)
