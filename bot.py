@@ -69,7 +69,7 @@ async def kick(ctx, userName: discord.User):
 @client.command()
 @commands.has_permissions(kick_members=True)
 async def kickk(ctx, user: discord.Member, *, reason):
-  await client.kick(reason=reason)
+  await user.kick(reason=reason)
 	 
 @client.command(pass_context=True)
 async def purge(ctx, *, amount : int):
