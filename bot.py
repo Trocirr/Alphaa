@@ -61,11 +61,12 @@ async def mute(ctx, member: discord.Member):
 async def randomnumber(ctx):
      await client.say(random.randint(1,101))	
 
-
 @client.command(pass_context=True)
-async def urdumb(ctx):
-	await client.say("fak u")
-	 		
+async def say(ctx):
+      if ctx.message.author.id =='399567243744116738':
+	mesg = ' '.join(args)
+   	await client.delete_message(ctx.message)
+	return await client.say(mesg)
 	 
 @client.command(pass_context=True)
 async def purge(ctx, *, amount : int):
