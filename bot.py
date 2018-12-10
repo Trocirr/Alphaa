@@ -222,13 +222,7 @@ async def choose(ctx,message):
 async def ping(ctx):
 	await client.say("Pong! :ping_pong:")
 
-@client.command(pass_context=True)
-    async def pingg(ctx):
-    	channel = ctx.message.channel
-    	t1 = time.perf_counter()
-    	await client.send_typing(channel)
-    	t2 = time.perf_counter()
-    	await client.say('Pong! It took {}ms.'.format(round((t2-t1))))
+
 
 @client.command(pass_context=True)
 @commands.cooldown(1, 10, commands.BucketType.user)
