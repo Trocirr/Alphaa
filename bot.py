@@ -14,6 +14,7 @@ Client = discord.Client()
 client = commands.Bot(command_prefix = "-")
 client.remove_command('help')
 
+Clientt = commands.Bot(commands.when_mentioned_or('...'))
 
 
 @client.event
@@ -65,6 +66,12 @@ async def randomnumber(ctx):
 @commands.has_permissions(kick_members=True)
 async def kick(ctx, userName: discord.User):
     await client.kick(userName)
+
+@Clientt.command(pass_context=True)
+async def ping_ms(ctx):
+    t = await Clientt.say('Pong!')
+    ms = (t.timestamp-ctx.message.timestamp).total_seconds() * 1000
+    await Clientt.edit_message(t, new_content='Pong! Took: {}ms'.format(int(ms)))
 
 	 
 @client.command(pass_context=True)
