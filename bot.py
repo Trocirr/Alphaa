@@ -65,6 +65,7 @@ async def randomnumber(ctx):
 @commands.has_permissions(kick_members=True)
 async def kick(ctx, userName: discord.User):
     await client.kick(userName)
+    await client.say('User Kicked Successfully')
 
 
 
