@@ -65,7 +65,6 @@ async def randomnumber(ctx):
 @commands.has_permissions(kick_members=True)
 async def kick(ctx, userName: discord.User):
     await client.kick(userName)
-    await client.say("User Successfully Kicked")
     embed=discord.Embed(title="User Kicked!", description="**{0}** was kicked by **{1}**!".format(member, ctx.message.author), color=0xff00f6)
     await client.say(embed=embed)
 else:
