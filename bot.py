@@ -64,12 +64,8 @@ async def randomnumber(ctx):
 @client.command(pass_context = True)
 @commands.has_permissions(kick_members=True)
 async def kick(ctx, userName: discord.User):
-	embed = discord.Embed(title="User Kicked!", description="**{0}** was kicked by **{1}**!".format(member, ctx.message.author), color=0xff00f6)
 	await client.kick(userName) 
-	await client.say(embed=embed)
-     else:
-	embed=discord.Embed(title="Permission Denied.", description="<:alphaError:468832634542227477> You do not have permissions to use this command.", color=0xff00f6)
-	await client.say(embed=embed)
+
 
 @client.command(pass_context=True)
 async def purge(ctx, *, amount : int):
