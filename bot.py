@@ -120,6 +120,13 @@ async def server(ctx):
     txt= str(a) + " | " + str(utc)
     embed.set_footer(text=txt, icon_url=ctx.message.author.avatar_url)
     await client.say(embed=embed)
+
+@client.command(pass_context=True, description='Shows the server info.')
+async def server(ctx):
+    embed = discord.Embed(description="__**Trocir's stats**__", color=0x00ff00)
+    embed.add_field(name="Goals", value="16")
+    embed.add_field(name="Assists", value="6")
+    await client.say(embed=embed)
 	
 	
 @client.command(pass_context=True)
