@@ -122,7 +122,7 @@ async def server(ctx):
     await client.say(embed=embed)
 
 @client.command(pass_context=True, description='Shows the server info.')
-async def server(ctx):
+async def trocir(ctx):
     embed = discord.Embed(description="__**Trocir's stats**__", color=0x00ff00)
     embed.add_field(name="Goals", value="16")
     embed.add_field(name="Assists", value="6")
