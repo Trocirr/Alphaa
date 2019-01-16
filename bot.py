@@ -141,11 +141,11 @@ async def acquah(ctx):
 
 @client.command(pass_context=True, description='Shows the server info.')
 async def aalaaprocks(ctx):
-    embed = discord.Embed(description="__**aalaaprocks's stats :flag_gy:**__", color=0x00ff00)
+    embed = discord.Embed(description="__**aalaaprocks's stats :flag_ie:**__", color=0x00ff00)
     embed.add_field(name="Team", value="Blaugrana")
     embed.add_field(name="Goals", value="14")
     embed.add_field(name="Matches played", value="2")
-    embed.set_thumbnail(url='https://cdn.discordapp.com/emojis/532692198114721822.png?v=1')
+    embed.set_thumbnail(url='https://cdn.discordapp.com/emojis/534048933631229962.png?v=1')
     await client.say(embed=embed)
 
 
@@ -170,7 +170,7 @@ async def blaugrana(ctx):
     embed.add_field(name="Loss", value="0")
     embed.add_field(name="Draws", value="0")
     embed.add_field(name="Matches played", value="2")
-    embed.set_thumbnail(url='https://cdn.discordapp.com/emojis/532692198114721822.png?v=1')
+    embed.set_thumbnail(url='https://cdn.discordapp.com/emojis/534048933631229962.png?v=1')
     await client.say(embed=embed)
 
 	
