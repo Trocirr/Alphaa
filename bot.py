@@ -149,7 +149,7 @@ async def info(ctx, user: discord.Member):
 	
 @client.command(pass_context=True)
 async def about(ctx):
-    embed = discord.Embed(title="__About Alpha®__", description="© 2019 BFL Bot All Rights Reserved", color=0x00ff00)
+    embed = discord.Embed(title="__About BFL__", description="© 2019 BFL Bot All Rights Reserved", color=0x00ff00)
     embed.add_field(name="Original Creators", value="Trocir#9999 & Mes#0010")
     embed.add_field(name="Server count", value=str(len(client.servers)))
     embed.add_field(name="User count", value=str(len(list(client.get_all_members()))))
