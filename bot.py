@@ -149,13 +149,13 @@ async def info(ctx, user: discord.Member):
 	
 @client.command(pass_context=True)
 async def about(ctx):
-    embed = discord.Embed(title="__About Alpha®__", description="© 2018 Alpha® Bot All Rights Reserved", color=0x00ff00)
-    embed.add_field(name="Original Creators", value="Trocir#1816 & Mes#1807")
+    embed = discord.Embed(title="__About Alpha®__", description="© 2019 BFL Bot All Rights Reserved", color=0x00ff00)
+    embed.add_field(name="Original Creators", value="Trocir#9999 & Mes#0010")
     embed.add_field(name="Server count", value=str(len(client.servers)))
     embed.add_field(name="User count", value=str(len(list(client.get_all_members()))))
     embed.add_field(name="Channel count",value=str(len(list(client.get_all_channels()))))
     embed.add_field(name="API", value="Python")
-    embed.set_thumbnail(url='https://images-ext-2.discordapp.net/external/p9wvkHrqOi1jHV7Gyrld_ttGUXgeenimIzNLZQUf6PM/%3Fsize%3D1024/https/cdn.discordapp.com/avatars/432607914432135169/a394fefee1f3b6101c3c229e9f2a4eeb.webp?width=646&height=646')
+    embed.set_thumbnail(url='https://media.discordapp.net/attachments/534665657107611663/535158629230313482/BFL.PNG?width=158&height=176')
     utc_dt = datetime.now(timezone.utc)
     p = utc_dt.strftime('     Time - %H:%M:%S | Date - %d/%m/%Y')
     utc = str(p)    
