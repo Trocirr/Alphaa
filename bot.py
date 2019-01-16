@@ -92,14 +92,14 @@ async def idk2(ctx):
 @client.command(pass_context=True)
 async def exdee(ctx):
     embed = discord.Embed(description="", color=0xC9C9C9)
-    embed.add_field(name="Rules", value="You can talk about anything here as long as it isn't disrespectful. If you have a problem with anyone or anything in this server, please DM the Staff about it. \n \n 1. Rudeness, harassment, and immaturity will not be tolerated. \n 2. Porn and otherwise NSFW/NSFL content is prohibited. \n 3. No discussion about highly illegal activity. \n 4. Copyrighted and other unlawful material is prohibited, such as links to illegal content. \n 5. Advertising and promoting is prohibited. Don't even bother posting invite links because the bots will delete them anyway. \n 6. <#469175683784900630> is our main channel. Keep it clean. \n 7. No (random) links in the general chat <#469175683784900630> unless a moderator or higher lets you!")
+    embed.add_field(name="Rules", value="You can talk about anything here as long as it isn't disrespectful. If you have a problem with anyone or anything in this server, please DM the Admins about it. \n \n 1. Rudeness, harassment, and immaturity will not be tolerated. \n 2. Porn and otherwise NSFW/NSFL content is prohibited. \n 3. No discussion about highly illegal activity. \n 4. Copyrighted and other unlawful material is prohibited, such as links to illegal content. \n 5. Advertising and promoting is prohibited. Don't even bother posting invite links because the bots will delete them anyway. \n 6. <#508748393242296323> is our main channel. Keep it clean. \n 7. No (random) links in the general chat <#508748393242296323> unless a moderator or higher lets you!")
     await client.say(embed=embed)
 		
 	
 @client.command(pass_context=True)
 async def idk(ctx):
-    embed = discord.Embed(description="", color=0xC9C9C9)
-    embed.add_field(name="Roles", value="<@&469176149126283274> - The Alpha Bot \n <@&469177339243266048> - Staff Team of the server \n <@&469179503717908500> - The contributors \n <@&469177384487223297> - Tag them if you need help \n <@&469179298901917704> - The police of the server \n <@&477596976096083998> - Default role \n <@&469180548338810882> - Role for our bots")
+    embed = discord.Embed(description="", color=0xC9C9C9)s
+    embed.add_field(name="Roles", value="<@&508749050049200130> - Admins of the league \n <@&532700613583175680> - Referees. Ping them if u need one \n <@&515156702199545856> - The Helpers \n <@&535133745934499900> - Bot Creator \n <@&532697282102165518> - Our Official Bot \n <@&532698374663700517> - Special people \n <@&508749055573229609> - Default role for everyone")
     await client.say(embed=embed)	
 	
 	
