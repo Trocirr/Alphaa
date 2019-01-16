@@ -28,7 +28,7 @@ async def on_ready():
 async def on_command_error(error, ctx):
 	if isinstance(error, commands.CommandOnCooldown):
 		await client.send_message(ctx.message.channel, content='Calm down! You have to wait %.2f seconds before using new command :clock1:' % error.retry_after)
-	raise error    g fa		
+	raise error		
 	
 @client.event
 async def on_ready():
