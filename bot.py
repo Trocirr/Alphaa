@@ -85,7 +85,7 @@ async def dmm(ctx, member: discord.Member, message: str):
 	
 @client.command(pass_context=True)
 async def idk2(ctx):
-	embed = discord.Embed(title="Welcome to Alpha® Support Server!", description="Alpha® is launched in August of 2018. This is the official discord server of Alpha®. You can talk about anything here as long as it isn't disrespectful.", color=0xFF8C00)
+	embed = discord.Embed(title="Welcome to Bonk.io Football League Discord Server!", description="BFL is launched in November of 2017. This is the official discord server of BFL. You can talk about anything here as long as it isn't disrespectful.", color=0xFF8C00)
 	await client.say(embed=embed)	
 	
 
