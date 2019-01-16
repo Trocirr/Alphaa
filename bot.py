@@ -98,7 +98,7 @@ async def exdee(ctx):
 	
 @client.command(pass_context=True)
 async def idk(ctx):
-    embed = discord.Embed(description="", color=0xC9C9C9)s
+    embed = discord.Embed(description="", color=0xC9C9C9)
     embed.add_field(name="Roles", value="<@&508749050049200130> - Admins of the league \n <@&532700613583175680> - Referees. Ping them if u need one \n <@&515156702199545856> - The Helpers \n <@&535133745934499900> - Bot Creator \n <@&532697282102165518> - Our Official Bot \n <@&532698374663700517> - Special people \n <@&508749055573229609> - Default role for everyone")
     await client.say(embed=embed)	
 	
