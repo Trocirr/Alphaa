@@ -123,15 +123,25 @@ async def server(ctx):
 
 @client.command(pass_context=True, description='Shows the server info.')
 async def trocir(ctx):
-    embed = discord.Embed(description="**Trocir's stats :flag_rs:**", color=0x00ff00)
-    embed.add_field(name="Goals", value="-")
+    embed = discord.Embed(description="__**Trocir's stats :flag_rs:**__", color=0x00ff00)
     embed.add_field(name="Team", value="-")
+    embed.add_field(name="Goals", value="-")
     embed.add_field(name="Matches played", value="-")
+    embed.set_thumbnail(url='https://cdn.discordapp.com/emojis/532692198114721822.png?v=1')
+    await client.say(embed=embed)
+
+@client.command(pass_context=True, description='Shows the server info.')
+async def atleticozero(ctx):
+    embed = discord.Embed(description="__**Atletico Zero**__", color=0x00ff00)
+    embed.add_field(name="Captain", value="Acquah")
     embed.add_field(name="Wins", value="-")
-    embed.add_field(name="Loses", value="-")
-    embed.set_thumbnail(url='https://cdn.discordapp.com/emojis/532327429952503829.png?v=1')
+    embed.add_field(name="Loss", value="-")
+    embed.add_field(name="Matches played", value="-")
+    embed.set_thumbnail(url='https://cdn.discordapp.com/emojis/532692198114721822.png?v=1')
     await client.say(embed=embed)
 	
+
+
 	
 @client.command(pass_context=True)
 async def info(ctx, user: discord.Member):
