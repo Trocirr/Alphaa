@@ -136,6 +136,7 @@ async def atleticozero(ctx):
     embed.add_field(name="Captain", value="Acquah")
     embed.add_field(name="Wins", value="-")
     embed.add_field(name="Loss", value="-")
+    embed.add_field(name="Draws", value="-")
     embed.add_field(name="Matches played", value="-")
     embed.set_thumbnail(url='https://cdn.discordapp.com/emojis/532692198114721822.png?v=1')
     await client.say(embed=embed)
