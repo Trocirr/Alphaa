@@ -123,9 +123,13 @@ async def server(ctx):
 
 @client.command(pass_context=True, description='Shows the server info.')
 async def trocir(ctx):
-    embed = discord.Embed(description="__**Trocir's stats**__", color=0x00ff00)
-    embed.add_field(name="Goals", value="16")
-    embed.add_field(name="Assists", value="6")
+    embed = discord.Embed(description="**Trocir's stats :flag_rs:**", color=0x00ff00)
+    embed.add_field(name="Goals", value="-")
+    embed.add_field(name="Team", value="-")
+    embed.add_field(name="Matches played", value="-")
+    embed.add_field(name="Wins", value="-")
+    embed.add_field(name="Loses", value="-")
+    embed.set_thumbnail(url='https://cdn.discordapp.com/emojis/532327429952503829.png?v=1')
     await client.say(embed=embed)
 	
 	
