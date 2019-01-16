@@ -131,17 +131,47 @@ async def trocir(ctx):
     await client.say(embed=embed)
 
 @client.command(pass_context=True, description='Shows the server info.')
+async def acquah(ctx):
+    embed = discord.Embed(description="__**Acquah's stats :flag_it:**__", color=0x00ff00)
+    embed.add_field(name="Team", value="Atletico Zero")
+    embed.add_field(name="Goals", value="3")
+    embed.add_field(name="Matches played", value="1")
+    embed.set_thumbnail(url='https://cdn.discordapp.com/emojis/532692198114721822.png?v=1')
+    await client.say(embed=embed)
+
+@client.command(pass_context=True, description='Shows the server info.')
+async def aalaaprocks(ctx):
+    embed = discord.Embed(description="__**aalaaprocks's stats :flag_gy:**__", color=0x00ff00)
+    embed.add_field(name="Team", value="Blaugrana")
+    embed.add_field(name="Goals", value="14")
+    embed.add_field(name="Matches played", value="2")
+    embed.set_thumbnail(url='https://cdn.discordapp.com/emojis/532692198114721822.png?v=1')
+    await client.say(embed=embed)
+
+
+@client.command(pass_context=True, description='Shows the server info.')
 async def atleticozero(ctx):
     embed = discord.Embed(description="__**Atletico Zero**__", color=0x00ff00)
     embed.add_field(name="Captain", value="Acquah")
-    embed.add_field(name="Wins", value="-")
-    embed.add_field(name="Loss", value="-")
-    embed.add_field(name="Draws", value="-")
-    embed.add_field(name="Matches played", value="-")
+    embed.add_field(name="Trophies", value="0")
+    embed.add_field(name="Wins", value="0")
+    embed.add_field(name="Loss", value="1")
+    embed.add_field(name="Draws", value="0")
+    embed.add_field(name="Matches played", value="1")
     embed.set_thumbnail(url='https://cdn.discordapp.com/emojis/532692198114721822.png?v=1')
     await client.say(embed=embed)
 	
-
+@client.command(pass_context=True, description='Shows the server info.')
+async def blaugrana(ctx):
+    embed = discord.Embed(description="__**Blaugrana**__", color=0x00ff00)
+    embed.add_field(name="Captain", value="aalaaprocks")
+    embed.add_field(name="Trophies", value="1")
+    embed.add_field(name="Wins", value="2")
+    embed.add_field(name="Loss", value="0")
+    embed.add_field(name="Draws", value="0")
+    embed.add_field(name="Matches played", value="2")
+    embed.set_thumbnail(url='https://cdn.discordapp.com/emojis/532692198114721822.png?v=1')
+    await client.say(embed=embed)
 
 	
 @client.command(pass_context=True)
