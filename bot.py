@@ -141,7 +141,7 @@ async def acquah(ctx):
 
 @client.command(pass_context=True, description='Shows the server info.')
 async def nub0(ctx):
-    embed = discord.Embed(description="__**Acquah's stats :flag_dz:**__", color=0x00ff00)
+    embed = discord.Embed(description="__**Nub 0's stats :flag_dz:**__", color=0x00ff00)
     embed.add_field(name="Team", value="Legends")
     embed.add_field(name="Goals", value="1")
     embed.add_field(name="Matches played", value="1")
