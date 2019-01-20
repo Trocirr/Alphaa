@@ -130,14 +130,6 @@ async def trocir(ctx):
     embed.set_thumbnail(url='https://cdn.discordapp.com/emojis/532692198114721822.png?v=1')
     await client.say(embed=embed)
 
-@client.command(pass_context=True, description='Shows the server info.')
-async def trocir(ctx):
-    embed = discord.Embed(description="__**Trocir's stats :flag_rs:**__", color=0x00ff00)
-    embed.add_field(name="Team", value="-")
-    embed.add_field(name="Goals", value="-")
-    embed.add_field(name="Matches played", value="-")
-    embed.set_thumbnail(url='https://cdn.discordapp.com/emojis/532692198114721822.png?v=1')
-    await client.say(embed=embed)
 
 @client.command(pass_context=True, description='Shows the server info.')
 async def nub1(ctx):
