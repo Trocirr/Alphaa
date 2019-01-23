@@ -254,7 +254,6 @@ async def info(ctx, user: discord.Member):
     embed = discord.Embed(title="{}'s info".format(user.name), description="Here's what I could find:", color=0x00ff00)
     embed.add_field(name="Name", value=user.name, inline=True)
     embed.add_field(name="ID", value=user.id, inline=True)
-    embed.add_field(name="Created at:" value="no")
     embed.add_field(name="Joined at",value=user.joined_at)
     embed.add_field(name="Status", value=user.status, inline=True)
     embed.add_field(name="Highest role", value=user.top_role)
