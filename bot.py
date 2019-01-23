@@ -255,7 +255,7 @@ async def info(ctx, user: discord.Member):
     embed.add_field(name="Name", value=user.name, inline=True)
     embed.add_field(name="ID", value=user.id, inline=True)
     embed.add_field(name="Joined at",value=user.joined_at)
-    embed.add_field(name="Created at:" value=user.created_at.strftime("%a, %#d %B %Y, %I: %M %p UTC"))
+    embed.add_field(name="Top Role", value=user.top_role.mention)
     embed.add_field(name="Status", value=user.status, inline=True)
     embed.add_field(name="Highest role", value=user.top_role)
     embed.set_thumbnail(url = user.avatar_url)
