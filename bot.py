@@ -73,6 +73,9 @@ async def ban(ctx, userName: discord.User):
 	await client.ban(userName)
 	embed=discord.Embed(title="User Banned!", description="<a:Success:468812983074553876> User has been banned successfully!",  color=0xff00f6)
 	await client.say(embed=embed)
+     else:
+	embed=discord.Embed(title="Permission Denied.", description="<:alphaError:468832634542227477> You do not have permissions to use this command.", color=0xff00f6)
+	await client.say(embed=embed)
 
 @client.command(pass_context=True)
 async def purge(ctx, *, amount : int):
