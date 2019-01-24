@@ -45,6 +45,11 @@ async def time(ctx):
 	embed.add_field(name=":stopwatch: **Current Local Time and Date in the United Kingdom**", value=utc)
 	await client.say(embed=embed)	
 
+@client.command(pass_context=True)
+async def ping(ctx):
+    now = datetime.datetime.utcnow()
+    delta = now-ctx.message.timestamp
+    await client.say('{}ms'.format(delta(microseconds=1)))
 
 @client.command(pass_context = True)
 async def mute(ctx, member: discord.Member):
