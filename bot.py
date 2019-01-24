@@ -362,7 +362,6 @@ async def meme(ctx):
 	m=secure_random.choice(list)
 	embed = discord.Embed(description="Random Meme", color=0x00BFFF)
 	embed.set_image(url=m)
-	embed.set_footer(value= "<:bfl:535504575340478475> BFL Bot v1.3") 
 	await client.say(embed=embed)
 
 
