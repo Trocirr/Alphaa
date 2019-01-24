@@ -45,6 +45,10 @@ async def time(ctx):
 	embed.add_field(name=":stopwatch: **Current Local Time and Date in the United Kingdom**", value=utc)
 	await client.say(embed=embed)	
 
+@client.command(pass_context=True)
+async def pinged(ctx):
+    latency = client.latency
+    await ctx.send(latency)
 
 @client.command(pass_context = True)
 async def mute(ctx, member: discord.Member):
@@ -265,7 +269,6 @@ async def info(ctx, user: discord.Member):
     embed.add_field(name="Top Role", value=user.top_role.mention)
     embed.add_field(name="Joined at",value=user.joined_at)
     embed.add_field(name="ID", value=user.id, inline=True)
-    embed.add_field(name="Permissions", value=user.key_permissions)
     embed.set_thumbnail(url = user.avatar_url)
     utc_dt = datetime.now(timezone.utc)
     p = utc_dt.strftime('     Time - %H:%M:%S | Date - %d/%m/%Y')
