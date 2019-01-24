@@ -71,6 +71,7 @@ async def kick(ctx, userName: discord.User):
 @commands.has_permissions(ban_members=True)
 async def ban(ctx, userName: discord.User):
 	await client.ban(userName)
+	await client.say("User has been banned!")
 
 @client.command(pass_context=True)
 async def purge(ctx, *, amount : int):
