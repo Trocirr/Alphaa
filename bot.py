@@ -7,7 +7,8 @@ import random
 import os
 import requests
 
-from datetime import timezone
+from datetime import datetime, timezone
+
 
 
 Client = discord.Client()
@@ -44,14 +45,6 @@ async def time(ctx):
 	embed = discord.Embed(description="", color=0xFF0000)
 	embed.add_field(name=":stopwatch: **Current Local Time and Date in the United Kingdom**", value=utc)
 	await client.say(embed=embed)	
-
-@client.command(pass_context=True)
-async def pingd(ctx):
-    channel = ctx.message.channel
-    t1 = time.perf_counter()
-    await client.send_typing(channel)
-    t2 = time.perf_counter()
-    await client.say('Pong! It took {}ms.'.format(round((t2-t1))))
 
 
 
