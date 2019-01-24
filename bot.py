@@ -45,11 +45,6 @@ async def time(ctx):
 	embed.add_field(name=":stopwatch: **Current Local Time and Date in the United Kingdom**", value=utc)
 	await client.say(embed=embed)	
 
-@client.command(pass_context=True)
-async def pinf(ctx):
-    now = datetime.datetime.utcnow()
-    delta = now-ctx.message.timestamp
-    await client.say('{}ms'.format(delta(microseconds=1)))
 
 @client.command(pass_context = True)
 async def mute(ctx, member: discord.Member):
@@ -70,8 +65,12 @@ async def randomnumber(ctx):
 @client.command(pass_context = True)
 @commands.has_permissions(kick_members=True)
 async def kick(ctx, userName: discord.User):
-	await client.kick(userName) 
+	await client.kick(userName)
 
+@client.command(pass_context = True)
+@commands.has_permissions(ban_members=True)
+async def ban(ctx, userName: discord.User):
+	await client.ban(userName)
 
 @client.command(pass_context=True)
 async def purge(ctx, *, amount : int):
@@ -364,6 +363,7 @@ async def meme(ctx):
 	m=secure_random.choice(list)
 	embed = discord.Embed(description="Random Meme", color=0x00BFFF)
 	embed.set_image(url=m)
+	embed.set_footer(value= "<:bfl:535504575340478475> BFL Bot v1.3") 
 	await client.say(embed=embed)
 
 
