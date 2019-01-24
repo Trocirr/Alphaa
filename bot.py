@@ -6,7 +6,6 @@ import time
 import random
 import os
 import requests
-import discord, datetime, time
 
 from datetime import datetime, timezone
 
