@@ -46,9 +46,14 @@ async def time(ctx):
 	await client.say(embed=embed)	
 
 @client.command(pass_context=True)
-async def pinged(ctx):
-    latency = client.latency
-    await ctx.send(latency)
+async def pingd(ctx):
+    channel = ctx.message.channel
+    t1 = time.perf_counter()
+    await client.send_typing(channel)
+    t2 = time.perf_counter()
+    await client.say('Pong! It took {}ms.'.format(round((t2-t1))))
+
+
 
 @client.command(pass_context = True)
 async def mute(ctx, member: discord.Member):
