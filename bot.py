@@ -7,7 +7,7 @@ import random
 import os
 import requests
 
-from datetime import datetime, timezone
+from datetime import timezone
 
 
 Client = discord.Client()
