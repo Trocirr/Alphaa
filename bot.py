@@ -109,7 +109,7 @@ async def exdee(ctx):
 @client.command(pass_context=True)
 async def div1(ctx):
     embed = discord.Embed(description="", color=0xFF8C00)
-    embed.add_field(name="1st Division", value="1. Alex28102 :flag_ca: \n 2. Acquah :flag_it: \n Dadem :flag_dz: \n 3. Frozenkiller :flag_nl: \n 4. aalaaprocks :flag_ie: \n Shyrix :flag_fr: \n Trocir :flag_rs:")
+    embed.add_field(name="__1st Division__", value="1. Alex28102 :flag_ca: \n 2. Acquah :flag_it: \n 3. Dadem :flag_dz: \n 3. Frozenkiller :flag_nl: \n 4. aalaaprocks :flag_ie: \n 5. Shyrix :flag_fr: \n 6. Trocir :flag_rs:")
     await client.say(embed=embed)
 	
 @client.command(pass_context=True)
