@@ -113,6 +113,12 @@ async def div1(ctx):
     await client.say(embed=embed)
 	
 @client.command(pass_context=True)
+async def div2(ctx):
+    embed = discord.Embed(description="", color=0xFF8C00)
+    embed.add_field(name="__2nd Division__", value="1. Deus_ :flag_us: \n 2. Empirezz :flag_al: \n 3. King181 :flag_us: \n 3. Lxior :flag_us: \n 4. Shaun_ :flag_gb: \n 5. Tuccio :flag_us: \n 6. Warzen Rez :flag_us:")
+    await client.say(embed=embed)
+
+@client.command(pass_context=True)
 async def idk(ctx):
     embed = discord.Embed(description="", color=0xC9C9C9)
     embed.add_field(name="Roles", value="<@&535449445530075137> - Admins of the league \n <@&535498153378709504> - Referees. Ping them if u need one \n <@&535449391356575762> - The Staff Team \n <@&535449623947378708> Moderators \n <@&535449594491043841> - Bot Creator \n <@&535449576258273302> - Our Official Bot \n <@&535449518007648276> - Special people \n <@&535449546055090177> - League Players \n <@&535449658861027328> - Default role for everyone \n <@&535449699897835520> Role for our bots")
