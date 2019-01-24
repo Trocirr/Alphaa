@@ -109,13 +109,13 @@ async def exdee(ctx):
 @client.command(pass_context=True)
 async def div1(ctx):
     embed = discord.Embed(description="", color=0xFF8C00)
-    embed.add_field(name="__1st Division__", value="1. Alex28102 :flag_ca: \n 2. Acquah :flag_it: \n 3. Dadem :flag_dz: \n 3. Frozenkiller :flag_nl: \n 4. aalaaprocks :flag_ie: \n 5. Shyrix :flag_fr: \n 6. Trocir :flag_rs:")
+    embed.add_field(name="__1st Division__", value="1. Alex28102 :flag_ca: \n 2. Acquah :flag_it: \n 3. Dadem :flag_dz: \n 4. Frozenkiller :flag_nl: \n 5. aalaaprocks :flag_ie: \n 6. Shyrix :flag_fr: \n 7. Trocir :flag_rs:")
     await client.say(embed=embed)
 	
 @client.command(pass_context=True)
-async def div2(ctx):
+async def div3(ctx):
     embed = discord.Embed(description="", color=0xFF8C00)
-    embed.add_field(name="__2nd Division__", value="1. Deus_ :flag_us: \n 2. Empirezz :flag_al: \n 3. King181 :flag_us: \n 3. Lxior :flag_us: \n 4. Shaun_ :flag_gb: \n 5. Tuccio :flag_us: \n 6. Warzen Rez :flag_us:")
+    embed.add_field(name="__2nd Division__", value="1. Deus_ :flag_us: \n 2. Empirezz :flag_al: \n 3. King181 :flag_us: \n 4. Lxior :flag_us: \n 5. Shaun_ :flag_gb: \n 6. Tuccio :flag_us: \n 7. Warzen Rez :flag_us:")
     await client.say(embed=embed)
 
 @client.command(pass_context=True)
