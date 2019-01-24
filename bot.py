@@ -71,7 +71,7 @@ async def kick(ctx, userName: discord.User):
 @commands.has_permissions(ban_members=True)
 async def ban(ctx, userName: discord.User):
 	await client.ban(userName)
-	embed=discord.Embed(title="User Banned.", description="banned", color=0xff00f6)
+	embed=discord.Embed(title="User Banned.", description="<a:Success:468812983074553876> **{0}** has been banned by **{1}**!.format(user, ctx.message.author)", color=0xff00f6)
 	await client.say(embed=embed)
 
 @client.command(pass_context=True)
