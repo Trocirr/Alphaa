@@ -46,7 +46,7 @@ async def time(ctx):
 	await client.say(embed=embed)	
 
 @client.command(pass_context=True)
-async def ping(ctx):
+async def pinf(ctx):
     now = datetime.datetime.utcnow()
     delta = now-ctx.message.timestamp
     await client.say('{}ms'.format(delta(microseconds=1)))
