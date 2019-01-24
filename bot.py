@@ -45,6 +45,15 @@ async def time(ctx):
 	embed.add_field(name=":stopwatch: **Current Local Time and Date in the United Kingdom**", value=utc)
 	await client.say(embed=embed)	
 	
+@client.command(pass_context=True)
+async def pinggg(ctx):
+    """ Pong! """
+    await delete_message(ctx.message)
+    before = time.monotonic()
+    message = await ctx.send("Pong!")
+    ping = (time.monotonic() - before) * 1000
+    await message.edit(content=f"Pong!  `{int(ping)}ms`")
+    print(f'Ping {int(ping)}ms')
 
 @client.command(pass_context = True)
 async def mute(ctx, member: discord.Member):
@@ -253,10 +262,10 @@ async def requiem(ctx):
 async def info(ctx, user: discord.Member):
     embed = discord.Embed(title="{}'s info".format(user.name), description="Here's what I could find:", color=0x00ff00)
     embed.add_field(name="Name", value=user.name, inline=True)
-    embed.add_field(name="ID", value=user.id, inline=True)
-    embed.add_field(name="Top Role", value=user.top_role.mention)
     embed.add_field(name="Status", value=user.status, inline=True)
+    embed.add_field(name="Top Role", value=user.top_role.mention)
     embed.add_field(name="Joined at",value=user.joined_at)
+    embed.add_field(name="ID", value=user.id, inline=True)
     embed.set_thumbnail(url = user.avatar_url)
     utc_dt = datetime.now(timezone.utc)
     p = utc_dt.strftime('     Time - %H:%M:%S | Date - %d/%m/%Y')
