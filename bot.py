@@ -44,16 +44,7 @@ async def time(ctx):
 	embed = discord.Embed(description="", color=0xFF0000)
 	embed.add_field(name=":stopwatch: **Current Local Time and Date in the United Kingdom**", value=utc)
 	await client.say(embed=embed)	
-	
-@client.command(pass_context=True)
-async def pinggg(ctx):
-    """ Pong! """
-    await delete_message(ctx.message)
-    before = time.monotonic()
-    message = await ctx.send("Pong!")
-    ping = (time.monotonic() - before) * 1000
-    await message.edit(content=f"Pong!  `{int(ping)}ms`")
-    print(f'Ping {int(ping)}ms')
+
 
 @client.command(pass_context = True)
 async def mute(ctx, member: discord.Member):
