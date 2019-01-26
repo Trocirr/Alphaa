@@ -65,6 +65,7 @@ async def randomnumber(ctx):
 	await client.say(random.randint(1,101))	
 
 @client.command(pass_context = True)
+@commands.has_permissions(ban_members=True)
 async def kick(ctx, userName: discord.User):
 	if ctx.message.author.server_permissions.administrator or message.author.id == "399567243744116738" or message.author.id == "293447483818901504":
 	await client.kick(userName)
