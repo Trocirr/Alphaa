@@ -65,14 +65,16 @@ async def randomnumber(ctx):
      await client.say(random.randint(1,101))	
 
 @client.command(pass_context = True)
+@commands.has_permissions(kick_members=True)
 async def kick(ctx, userName: discord.User):
-    if ctx.message.author.server_permissions.administrator or if message.author.id == "399567243744116738" or if message.author.id == "293447483818901504":
+     if message.author.id == "399567243744116738" or message.author.id == "293447483818901504":
 	await client.kick(userName)
 	embed=discord.Embed(title="User Kicked!", description="<a:Success:468812983074553876> **{0}** has been kicked by **{1}**!".format(userName, ctx.message.author),  color=0xff00f6)
 	await client.say(embed=embed)
 
 
 @client.command(pass_context = True)
+@commands.has_permissions(ban_members=True)
 async def ban(ctx, userName: discord.User):
 	await client.ban(userName)
 	embed=discord.Embed(title="User Banned!", description="<a:Success:468812983074553876> **{0}** has been banned by **{1}**!".format(userName, ctx.message.author),  color=0xff00f6)
