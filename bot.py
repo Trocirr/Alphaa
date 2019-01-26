@@ -47,7 +47,7 @@ async def time(ctx):
 	await client.say(embed=embed)	
 
 @client.command(pass_context = True)
-async def mutee(ctx, member: discord.Member, message: str [:200]):
+async def mutee(ctx, member: discord.Member, message: str):
      if ctx.message.author.server_permissions.administrator or ctx.message.author.id == '399567243744116738':
           role = discord.utils.get(member.server.roles, name='Muted')
           await client.add_roles(member, role)
