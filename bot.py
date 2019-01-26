@@ -74,7 +74,6 @@ async def kick(ctx, userName: discord.User):
 
 @client.command(pass_context = True)
 async def ban(ctx, userName: discord.User):
-     if ctx.message.author.server_permissions.administrator or ctx.message.author.id == '399567243744116738' or '293447483818901504':
 	await client.ban(userName)
 	embed=discord.Embed(title="User Banned!", description="<a:Success:468812983074553876> **{0}** has been banned by **{1}**!".format(userName, ctx.message.author),  color=0xff00f6)
 	await client.say(embed=embed)
