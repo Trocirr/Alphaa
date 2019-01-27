@@ -69,10 +69,6 @@ async def mute(ctx, member: discord.Member):
         embed=discord.Embed(title="Permission Denied.", description="<:alphaError:468832634542227477> You do not have permissions to use this command.", color=0xff00f6)
         await client.say(embed=embed)
 
-@client.command(pass_context=True)
-async def link(ctx):
-	embed=discord.Embed(title"a", description="hi"), color=0xff00f6)
-	await client.say(embed=embed)
 
 @client.command(pass_context=True)
 async def randomnumber(ctx):
@@ -155,6 +151,11 @@ async def server(ctx):
     a=ctx.message.author
     txt= str(a) + " | " + str(utc)
     embed.set_footer(text=txt, icon_url=ctx.message.author.avatar_url)
+    await client.say(embed=embed)
+
+@client.command(pass_context=True, description='Shows the server info.')
+async def link(ctx):
+    embed = discord.Embed(description="__**Trocir's stats :flag_rs:**__", color=0x00ff00)
     await client.say(embed=embed)
 
 @client.command(pass_context=True, description='Shows the server info.')
