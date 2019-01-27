@@ -69,6 +69,9 @@ async def mute(ctx, member: discord.Member):
         embed=discord.Embed(title="Permission Denied.", description="<:alphaError:468832634542227477> You do not have permissions to use this command.", color=0xff00f6)
         await client.say(embed=embed)
 
+@client.command(pass_context=True)
+async def link(ctx):
+	await client.say("hi")
 
 @client.command(pass_context=True)
 async def randomnumber(ctx):
