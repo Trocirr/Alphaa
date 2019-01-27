@@ -71,7 +71,7 @@ async def mute(ctx, member: discord.Member):
 
 @client.command(pass_context=True)
 async def link(ctx):
-	await client.say("hi")
+	await client.send_message(message.channel, "hi")
 
 @client.command(pass_context=True)
 async def randomnumber(ctx):
