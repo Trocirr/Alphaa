@@ -155,7 +155,7 @@ async def server(ctx):
 
 @client.command(pass_context=True, description='Shows the server info.')
 async def link(ctx):
-    embed = discord.Embed(description="__**Trocir's stats :flag_rs:**__", color=0x00ff00)
+    embed = discord.Embed(description="[disc](https://discordapp.com)", color=0x00ff00)
     await client.say(embed=embed)
 
 @client.command(pass_context=True, description='Shows the server info.')
