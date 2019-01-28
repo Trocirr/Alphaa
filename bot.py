@@ -382,7 +382,10 @@ async def choose(ctx,message):
 @client.command(pass_context=True)
 @commands.cooldown(1, 5, commands.BucketType.user)
 async def ping(ctx):
-	await client.say("Pong! :ping_pong:")
+	start = time.time() * 1000
+	msg = await ctx.message.channel.send("Pong!")
+	end = time.time() * 1000
+	await msg.edit(content="Pong! %sms" % (str(int(round(end-start, 0)))))
 
 
 
