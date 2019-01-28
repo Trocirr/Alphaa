@@ -374,7 +374,7 @@ async def div(ctx, a,b):
 	
 @client.command(pass_context=True)
 async def choose(ctx,message):
-	x=message.split(" | ")
+	x=message.split("/")
 	await client.say(":thinking:  |  I choose: "+ "**"+ random.choice(x) +"**!")
 
 
