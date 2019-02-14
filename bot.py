@@ -333,15 +333,7 @@ async def about(ctx):
     txt= str(a) + " | " + str(utc)
     embed.set_footer(text=txt, icon_url=ctx.message.author.avatar_url) 
     await client.say(embed=embed)
-	
-@client.command(pass_context=True)
-    async def pingt(self,ctx):
-        channel = ctx.message.channel
-        t1 = time.perf_counter()
-        await self.client.send_typing(channel)
-        t2 = time.perf_counter()
-        await self.clent.say("pseudo-ping: {}ms".format(round((t2-t1)*1000)))
-	
+		
 
 @client.command(pass_context=True)
 async def avatar(ctx, user: discord.Member):
