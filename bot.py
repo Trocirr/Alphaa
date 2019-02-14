@@ -165,7 +165,7 @@ async def server(ctx):
 @client.command(pass_context=True)
 async def test123(ctx):
 	msg = await client.say("no")
-	edit_message(msg, "test")
+	await client.edit_message(msg, "hi")
 
 @client.command(pass_context=True, description='Shows the server info.')
 async def link(ctx):
