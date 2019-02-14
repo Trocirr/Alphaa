@@ -46,6 +46,11 @@ async def time(ctx):
 	embed.add_field(name=":stopwatch: **Current Local Time and Date in the United Kingdom**", value=utc)
 	await client.say(embed=embed)	
 
+@client.command(pass_context=True)
+async def join(ctx):
+	channel = ctx.message.author.voice.voice_channel
+	await clientjoin_voice_channel(channel)
+
 @client.command(pass_context = True)
 async def mutee(ctx, member: discord.Member, message: str):
      if ctx.message.author.server_permissions.administrator or ctx.message.author.id == '399567243744116738':
