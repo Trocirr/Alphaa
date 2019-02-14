@@ -162,6 +162,11 @@ async def server(ctx):
     embed.set_footer(text=txt, icon_url=ctx.message.author.avatar_url)
     await client.say(embed=embed)
 
+@client.command(pass_context=True)
+async def test123(ctx):
+	msg = await client.say("no")
+	edit_message(msg, "test")
+
 @client.command(pass_context=True, description='Shows the server info.')
 async def link(ctx):
     embed = discord.Embed(description="[disc](https://discordapp.com)", color=0x00ff00)
