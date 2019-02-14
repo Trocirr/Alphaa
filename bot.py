@@ -140,10 +140,14 @@ async def div3(ctx):
 @client.command(pass_context=True)
 async def idk(ctx):
     embed = discord.Embed(description="", color=0xC9C9C9)
-    embed.add_field(name="Roles", value="<@&535449445530075137> - Admins of the league \n <@&535498153378709504> - Referees. Ping them if u need one \n <@&535449391356575762> - The Staff Team \n <@&535449623947378708> Moderators \n <@&535449594491043841> - Bot Creator \n <@&535449576258273302> - Our Official Bot \n <@&535449518007648276> - Special people \n <@&535449546055090177> - League Players \n <@&535449658861027328> - Default role for everyone \n <@&535449699897835520> Role for our bots")
+    msgg = embed.add_field(name="Roles", value="<@&535449445530075137> - Admins of the league \n <@&535498153378709504> - Referees. Ping them if u need one \n <@&535449391356575762> - The Staff Team \n <@&535449623947378708> Moderators \n <@&535449594491043841> - Bot Creator \n <@&535449576258273302> - Our Official Bot \n <@&535449518007648276> - Special people \n <@&535449546055090177> - League Players \n <@&535449658861027328> - Default role for everyone \n <@&535449699897835520> Role for our bots")
     await client.say(embed=embed)	
 	
-	
+@client.command(pass_context=True)
+async def lol(ctx):
+	msgg = idk
+	await client.edit_message(msg, "hi")	
+
 @client.command(pass_context=True, description='Shows the server info.')
 async def server(ctx):
     embed = discord.Embed(description="<:Members:468729005273776128> Here's what I could find:", color=0x00ff00)
