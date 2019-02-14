@@ -51,10 +51,6 @@ async def summon(ctx):
 	channel = ctx.message.author.voice.voice_channel
 	await client.join_voice_channel(channel)
 
-@client.command(pass_context=True)
-async def leave(ctx):
-	await vc.disconnect()
-
 @client.command(pass_context = True)
 async def mutee(ctx, member: discord.Member, message: str):
      if ctx.message.author.server_permissions.administrator or ctx.message.author.id == '399567243744116738':
@@ -145,7 +141,6 @@ async def idk(ctx):
 	
 @client.command(pass_context=True)
 async def lol(ctx):
-	msgg = idk
 	await client.edit_message(msg, "hi")	
 
 @client.command(pass_context=True, description='Shows the server info.')
