@@ -141,7 +141,7 @@ async def idk(ctx):
 	
 @client.command(pass_context=True)
 async def lol(ctx):
-	await client.edit_message(msg, "hi")	
+	await client.edit_message(msgg, "hi")	
 
 @client.command(pass_context=True, description='Shows the server info.')
 async def server(ctx):
