@@ -49,7 +49,7 @@ async def time(ctx):
 @client.command(pass_context=True)
 async def join(ctx):
 	channel = ctx.message.author.voice.voice_channel
-	await clientjoin_voice_channel(channel)
+	await client.join_voice_channel(channel)
 
 @client.command(pass_context = True)
 async def mutee(ctx, member: discord.Member, message: str):
