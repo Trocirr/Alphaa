@@ -174,7 +174,7 @@ async def test123(ctx):
 
 @client.command(pass_context=True)
 async def verify(ctx):
-	embed = discord.Embed(title="Verification", description="Type !verify, head over to DM and complete the verification.", color=0x3D59AB)
+	embed = discord.Embed(title="Verification", description="Head over to DM to complete the verification.", color=0x3D59AB)
 	await client.say(embed=embed)
 
 @client.command(pass_context=True, description='Shows the server info.')
