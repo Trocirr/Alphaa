@@ -141,7 +141,7 @@ async def idk(ctx):
 	
 @client.command(pass_context=True)
 async def xd(ctx):
-	embed = discord.Embed(title="<:bfl:535504575340478475> Welcome to the BFL Discord Server!", description="**Getting Started** \n - If you have any questions about BFL, feel free to ask us in <#535451148090474497>", color=0x3D59AB)
+	embed = discord.Embed(title="<:bfl:535504575340478475> Welcome to the BFL Discord Server!", description="**Getting Started** \n - If you have any questions about BFL, feel free to ask us in <#535451148090474497> \n - If you want to join the League, contact Trocir#9999 \n - If you have any suggestions or requests, let us know in <#536932821520875530> by typing `-suggest [Your suggestion here]` in <#535451161998917655>", color=0x3D59AB)
 	await client.say(embed=embed)	
 
 @client.command(pass_context=True)
