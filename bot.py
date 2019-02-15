@@ -172,6 +172,11 @@ async def test123(ctx):
 	msg = await client.say("no")
 	await client.edit_message(msg, "hi")
 
+@client.command(pass_context=True)
+async def verify(ctx):
+	embed = discord.Embed(title="Verification", description="Type !verify, head over to DM and complete the verification", color=0x3D59AB)
+	await client.say(embed=embed)
+
 @client.command(pass_context=True, description='Shows the server info.')
 async def link(ctx):
     embed = discord.Embed(description="[Marto's sister](https://discordapp.com) LOL, Follow marto's mom on pornhub [click here](https://pornhub.com) FOLLOW RULES, NO SWEARING SHIT TOXIC NIGGA RACIST OR SOMETHING MORE \n \n \n HAVE FUN", color=0x00ff00)
