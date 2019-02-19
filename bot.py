@@ -149,10 +149,6 @@ async def x(ctx):
 	embed.set_footer(text="Partner")
 	await client.say(embed=embed)
 
-@client.command(pass_context=True)
-async def lol(ctx):
-	await client.edit_message(msgg, "hi")	
-
 @client.command(pass_context=True, description='Shows the server info.')
 async def server(ctx):
     embed = discord.Embed(description="<:Members:468729005273776128> Here's what I could find:", color=0x00ff00)
@@ -312,6 +308,11 @@ async def requiem(ctx):
     embed.add_field(name="Matches played", value="1")
     embed.set_thumbnail(url='https://cdn.discordapp.com/emojis/536202285131235358.png?v=1')
     await client.say(embed=embed)
+
+@client.command(pass_context=True)
+async def ping(ctx):
+    latency = client.latency
+    await client.say(latency)
 
 
 @client.command(pass_context=True)
