@@ -142,6 +142,13 @@ async def xdxd(ctx):
 	await client.say(embed=embed)
 
 @client.command(pass_context=True)
+async def x(ctx):
+	embed = discord.Embed(title="International Football Federation", description="• 5 Minutes per half a match. \n • 2 Halves in a match. \n • 30 seconds to 2 minutes maximum added extra time! \n • Matches in draw, take 1 Point for leagues. \n • Matches in draw when in cup, means extra time. \n • If your draw even in extra time, you go in penalties. \n • In extra time you can score yet as many goals, it is not golden goal. \n • We are also working to add head-referees! \n • We are going to add a new staff with helpers , the ones who will add goals and etc. \n • New transfer systems.", color=0x00EEEE)
+	embed.add_field(name="Invite to this Server", value="[Click Here](https://discord.gg/RkR9Akt)")
+	embed.set_footer(text="Partner")
+	await client.say(embed=embed)
+
+@client.command(pass_context=True)
 async def lol(ctx):
 	await client.edit_message(msgg, "hi")	
 
