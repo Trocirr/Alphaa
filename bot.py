@@ -137,7 +137,7 @@ async def xd(ctx):
 @client.command(pass_context=True)
 async def xdxd(ctx):
 	embed = discord.Embed(title="Jokers F.C.", description="The most elite football club in bonk.io \n Led by elite players Tuccio |C|, Chiilzz and Coldrex", color=0xFF7256)
-	embed.add_field(name="Invite to this Server", value="https://discord.gg/akGqCUH")
+	embed.add_field(name="Invite to this Server", value="[Click Here](https://discord.gg/akGqCUH)")
 	embed.set_footer(text="Partner")
 	await client.say(embed=embed)
 
