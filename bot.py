@@ -68,6 +68,12 @@ async def mute(ctx, member: discord.Member):
 async def randomnumber(ctx):
 	await client.say(random.randint(1,101))	
 
+@client.command(pass_context=True)
+async def ping(ctx):
+	msg = await client.say("Pong! :ping_pong:)
+	await client.edit_message(msg, "Pong! :ping_pong:"random.randint(150,330))
+	
+
 @client.command(pass_context = True)
 @commands.has_permissions(ban_members=True)
 async def kick(ctx, userName: discord.User):
@@ -308,11 +314,6 @@ async def requiem(ctx):
     embed.add_field(name="Matches played", value="1")
     embed.set_thumbnail(url='https://cdn.discordapp.com/emojis/536202285131235358.png?v=1')
     await client.say(embed=embed)
-
-@client.command(pass_context=True)
-async def ping(ctx):
-    latency = client.latency
-    await client.say(latency)
 
 
 @client.command(pass_context=True)
