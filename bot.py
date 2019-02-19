@@ -66,7 +66,7 @@ async def mute(ctx, member: discord.Member):
 
 @client.command(pass_context=True)
 async def randomnumber(ctx):
-	await client.say("random"random.randint(1,101))	
+	await client.say(random.randint(1,101))	
 
 @client.command(pass_context=True)
 async def ping(ctx):
