@@ -70,7 +70,7 @@ async def randomnumber(ctx):
 
 @client.command(pass_context=True)
 async def ping(ctx):
-	msg = await client.say("Pong! :ping_pong:)
+	msg = await client.say("Pong! :ping_pong:")
 	await client.edit_message(msg, "no ping")
 	
 
