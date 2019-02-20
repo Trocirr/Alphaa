@@ -47,10 +47,15 @@ async def time(ctx):
 	await client.say(embed=embed)	
 
 @client.command(pass_context=True)
-async def summon(ctx):
+async def join(ctx):
 	channel = ctx.message.author.voice.voice_channel
 	await client.join_voice_channel(channel)
 
+@client.command(pass_context=True)
+async def leave(ctx):
+	server = ctx.message.server
+	voice_client = client.voice_client_in(server)
+	await voice_client.disconnect()
 
 @client.command(pass_context = True)
 async def mute(ctx, member: discord.Member):
