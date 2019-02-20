@@ -179,6 +179,11 @@ async def test123(ctx):
 	await client.edit_message(msg, "hi")
 
 @client.command(pass_context=True)
+async def lalaeeeeeeeeeeeeeeeeeeeeeee(ctx):
+	msg = await client.say("macro")
+	await client.edit_message(msg, "maxxxxxxro LOL")
+
+@client.command(pass_context=True)
 async def verify(ctx):
 	embed = discord.Embed(title="Verification", description="Head over to DM to complete the verification.", color=0x3D59AB)
 	await client.say(embed=embed)
