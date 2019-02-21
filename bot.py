@@ -53,7 +53,6 @@ async def join(ctx):
 
 @client.command(pass_context=True)
 async def roles(self, ctx):
-	roles = [r.name for r in ctx.message.server.role_hierarchy]
 	await client.send_message(ctx.message.channel, embed=discord.Embed(title="Roles", description="{}, the current roles are \n{}.".format(ctx.message.author.mention, ", ".join(roles)), colour=0X008CFF))
 
 @client.command(pass_context=True)
