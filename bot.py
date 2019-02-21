@@ -52,6 +52,11 @@ async def join(ctx):
 	await client.join_voice_channel(channel)
 
 @client.command(pass_context=True)
+async def roles(self, ctx):
+	roles = [r.name for r in ctx.message.server.role_hierarchy]
+	await self.client.send_message(ctx.message.channel, embed=discord.Embed(title="Roles", description="{}, the current roles are \n{}.".format(ctx.message.author.mention, ", ".join(roles)), colour=0X008CFF))
+
+@client.command(pass_context=True)
 async def leave(ctx):
 	server = ctx.message.server
 	voice_client = client.voice_client_in(server)
