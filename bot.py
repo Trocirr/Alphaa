@@ -155,7 +155,7 @@ async def xdxd(ctx):
 
 @client.command(pass_context=True)
 async def x(ctx):
-	embed = discord.Embed(title="", description=" Roses is one of the strongest clans currently in Bonk.io Football lead by xSmurf and Alex2810. \n \n It has one of the best war records currently standing at : 30-0! \n \n It has great players such as Nub1, Tuccio, xSmurf and more! \n \n Join roses today, the powerhouse clan of bonk.io!", color=0x00EEEE)
+	embed = discord.Embed(title="", description=" Roses is one of the strongest clans currently in Bonk.io Football lead by xSmurf and Alex2810. \n \n It has one of the best war records currently standing at : 30-0! \n \n It has great players such as Nub1, Tuccio, xSmurf and more! \n \n It has a discord server with an active community \n \n Join roses today, the powerhouse clan of bonk.io!", color=0x00EEEE)
 	embed.add_field(name="Invite to this Server", value="[Click Here](https://discord.gg/rGfxT3b)")
 	embed.set_image(url="https://images-ext-2.discordapp.net/external/M2Cx7oPf1mK4jtQ-Boa-n-Xxfwfz0ZD78lkViHXg2dc/https/discordapp.com/api/guilds/515609188047519744/icons/43d75d5e16516179ce4247d109f917ec.jpg?width=103&height=103")
 	embed.set_author(name="Roses", icon_url="https://images-ext-2.discordapp.net/external/M2Cx7oPf1mK4jtQ-Boa-n-Xxfwfz0ZD78lkViHXg2dc/https/discordapp.com/api/guilds/515609188047519744/icons/43d75d5e16516179ce4247d109f917ec.jpg?width=103&height=103")
