@@ -33,7 +33,7 @@ async def on_command_error(error, ctx):
 	
 @client.event
 async def on_ready():
-    await client.change_presence(game=discord.Game(name='-help'))
+    await client.change_presence(game=discord.Game(name='Bonk.io | -help'))
 	
 
 	
@@ -45,17 +45,6 @@ async def time(ctx):
 	embed = discord.Embed(description="", color=0xFF0000)
 	embed.add_field(name=":stopwatch: **Current Local Time and Date in the United Kingdom**", value=utc)
 	await client.say(embed=embed)	
-
-@client.command(pass_context=True)
-async def join(ctx):
-	channel = ctx.message.author.voice.voice_channel
-	await client.join_voice_channel(channel)
-
-@client.command(pass_context=True)
-async def leave(ctx):
-	server = ctx.message.server
-	voice_client = client.voice_client_in(server)
-	await voice_client.disconnect()
 
 @client.command(pass_context = True)
 async def mute(ctx, member: discord.Member):
@@ -183,6 +172,14 @@ async def top(ctx):
 async def vaga(ctx):
 	embed = discord.Embed(title="", description="", color=0x3D59AB)
 	embed.add_field(name="Top 30", value="This is the top 30 best players who are currently playing bonk.io judged by Trocir and TLJXEDO. \n \n It is also based on the 1v1 tournament results as well as public opinion. This is not 100% accurate, but it is as close as it can come to. If you have any opinions, feel free to express them. \n \n If you're not here, do not complain or request to be added.")
+	embed.set_author(name="Bonk.io - Football League", icon_url="https://images-ext-2.discordapp.net/external/WLXavXaSZmhfV9DuHJFBh0YcNbuUdtWLl1lJScKOqZo/https/cdn.discordapp.com/icons/533422792167915554/a052ef6b337317f7348c50730d8f1010.jpg?width=116&height=116")
+	embed.set_footer(text="BFL")
+	await client.say(embed=embed)	
+	
+@client.command(pass_context=True)
+async def vagaa(ctx):
+	embed = discord.Embed(title="", description="", color=0x3D59AB)
+	embed.add_field(name="Top 16", value="This is the top 16 best players who have competed in the 1v1 tournaments in this server judged by their scoring and performance by Trocir and TLJXEDO. Only players who have competed in the tournaments will be added here. \n \n Do not ask to be added or for your position to be changed.")
 	embed.set_author(name="Bonk.io - Football League", icon_url="https://images-ext-2.discordapp.net/external/WLXavXaSZmhfV9DuHJFBh0YcNbuUdtWLl1lJScKOqZo/https/cdn.discordapp.com/icons/533422792167915554/a052ef6b337317f7348c50730d8f1010.jpg?width=116&height=116")
 	embed.set_footer(text="BFL")
 	await client.say(embed=embed)	
