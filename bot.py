@@ -173,6 +173,11 @@ async def top(ctx):
 	embed.set_author(name="Top 30 Best All Time players in Bonk.io Football", icon_url="https://images-ext-2.discordapp.net/external/WLXavXaSZmhfV9DuHJFBh0YcNbuUdtWLl1lJScKOqZo/https/cdn.discordapp.com/icons/533422792167915554/a052ef6b337317f7348c50730d8f1010.jpg?width=116&height=116")
 	embed.set_footer(text="BFL")
 	await client.say(embed=embed)
+	
+@client.command(pass_context=True)
+async def heyhey(ctx):
+	await client.say("hey")
+	
 
 @client.command(pass_context=True, description='Shows the server info.')
 async def server(ctx):
