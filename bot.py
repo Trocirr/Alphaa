@@ -155,10 +155,10 @@ async def xdxd(ctx):
 
 @client.command(pass_context=True)
 async def x(ctx):
-	embed = discord.Embed(title="", description="• 5 Minutes per half a match. \n • 2 Halves in a match. \n • 30 seconds to 2 minutes maximum added extra time! \n • Matches in draw, take 1 Point for leagues. \n • Matches in draw when in cup, means extra time. \n • If your draw even in extra time, you go in penalties. \n • In extra time you can score yet as many goals, it is not golden goal. \n • We are also working to add head-referees! \n • We are going to add a new staff with helpers , the ones who will add goals and etc. \n • New transfer systems.", color=0x00EEEE)
-	embed.add_field(name="Invite to this Server", value="[Click Here](https://discord.gg/RkR9Akt)")
-	embed.set_image(url="https://media.discordapp.net/attachments/519033550662533130/547443831063445515/JPEG_20190215_200502.jpg?width=474&height=474")
-	embed.set_author(name="International Football Federation", icon_url="https://images-ext-2.discordapp.net/external/VWDgHLxjABNWb9jhGMNpegl_FSnQUxz-5jjTJ1wGsj0/%3Fwidth%3D474%26height%3D474/https/media.discordapp.net/attachments/519033550662533130/547443831063445515/JPEG_20190215_200502.jpg?width=427&height=427")
+	embed = discord.Embed(title="", description=" Roses is one of the strongest clans currently in Bonk.io Football lead by xSmurf and Alex2810. \n \n It has one of the best war records currently standing at : 30-0! \n \n It has great players such as Nub1, Tuccio, xSmurf and more! \n \n Join roses today, the powerhouse clan of bonk.io!", color=0x00EEEE)
+	embed.add_field(name="Invite to this Server", value="[Click Here](https://discord.gg/rGfxT3b)")
+	embed.set_image(url="https://images-ext-2.discordapp.net/external/M2Cx7oPf1mK4jtQ-Boa-n-Xxfwfz0ZD78lkViHXg2dc/https/discordapp.com/api/guilds/515609188047519744/icons/43d75d5e16516179ce4247d109f917ec.jpg?width=103&height=103")
+	embed.set_author(name="Roses", icon_url="https://images-ext-2.discordapp.net/external/M2Cx7oPf1mK4jtQ-Boa-n-Xxfwfz0ZD78lkViHXg2dc/https/discordapp.com/api/guilds/515609188047519744/icons/43d75d5e16516179ce4247d109f917ec.jpg?width=103&height=103")
 	embed.set_footer(text="Partner")
 	await client.say(embed=embed)
 	
