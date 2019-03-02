@@ -169,7 +169,7 @@ async def x(ctx):
 @client.command(pass_context=True)
 async def top(ctx):
 	embed = discord.Embed(title="", color=0x3D59AB)
-	embed.add_field(name="This is the top 30 best players who have ever played bonk.io and ever will judged by Trocir and TLJXEDO. It is also based on the 1v1 tournament results as well as public opinion. This is not 100% accurate, but it is as close as it can come to. If you have any opinions, feel free to express them. If you're not here, do not complain or request to be added.")
+	embed.add_field(name="", value="This is the top 30 best players who have ever played bonk.io and ever will judged by Trocir and TLJXEDO. It is also based on the 1v1 tournament results as well as public opinion. This is not 100% accurate, but it is as close as it can come to. If you have any opinions, feel free to express them. If you're not here, do not complain or request to be added.")
 	embed.set_author(name="Top 30 Best All Time players in Bonk.io Football", icon_url="https://images-ext-2.discordapp.net/external/WLXavXaSZmhfV9DuHJFBh0YcNbuUdtWLl1lJScKOqZo/https/cdn.discordapp.com/icons/533422792167915554/a052ef6b337317f7348c50730d8f1010.jpg?width=116&height=116")
 	embed.set_footer(text="BFL")
 	await client.say(embed=embed)
