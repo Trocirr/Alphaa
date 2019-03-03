@@ -133,6 +133,15 @@ async def xx(ctx):
 	await client.say(embed=embed)	
 	
 @client.command(pass_context=True)
+async def xxxx(ctx):
+	embed = discord.Embed(title="", description="Toxic was one of the first clans in Bonk.io Football. \n \n It has the record of 14-0! \n \n It was made in April 2018. \n \n It has a discord server with an active community. Join Toxic today!", color=0x00EEEE)
+	embed.add_field(name="Invite to this Server", value="[Click Here](https://discord.gg/tGyENaX)")
+	embed.set_image(url="https://images-ext-2.discordapp.net/external/ySqdQONc5yRsTo0k0vp_yMiIqH2TFSC_TS55YgkftPk/https/discordapp.com/api/guilds/548931059027279885/icons/3a14d7b362fa639baa9fcb3608c94bf4.jpg?width=103&height=103")
+	embed.set_author(name="Toxic", icon_url="https://images-ext-2.discordapp.net/external/ySqdQONc5yRsTo0k0vp_yMiIqH2TFSC_TS55YgkftPk/https/discordapp.com/api/guilds/548931059027279885/icons/3a14d7b362fa639baa9fcb3608c94bf4.jpg?width=103&height=103")
+	embed.set_footer(text="Partner")
+	await client.say(embed=embed)	
+	
+@client.command(pass_context=True)
 async def top(ctx):
 	embed = discord.Embed(title="", description="", color=0x3D59AB)
 	embed.add_field(name="Top 30", value="This is the top 30 best players who have ever played bonk.io and ever will judged by Trocir and TLJXEDO. \n \n It is also based on the 1v1 tournament results as well as public opinion. This is not 100% accurate, but it is as close as it can come to. If you have any opinions, feel free to express them. \n \n If you're not here, do not complain or request to be added.")
