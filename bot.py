@@ -179,7 +179,7 @@ async def vaga(ctx):
 @client.command(pass_context=True)
 async def vagaa(ctx):
 	embed = discord.Embed(title="", description="", color=0x3D59AB)
-	embed.add_field(name="", value="1.")
+	embed.add_field(name="↓", value="1.")
 	embed.set_author(name="Bonk.io - Football League", icon_url="https://images-ext-2.discordapp.net/external/WLXavXaSZmhfV9DuHJFBh0YcNbuUdtWLl1lJScKOqZo/https/cdn.discordapp.com/icons/533422792167915554/a052ef6b337317f7348c50730d8f1010.jpg?width=116&height=116")
 	embed.set_footer(text="BFL")
 	await client.say(embed=embed)
