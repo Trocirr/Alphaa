@@ -99,48 +99,11 @@ async def dmm(ctx, member: discord.Member, message: str):
     await client.send_message(member, message)	
 	
 @client.command(pass_context=True)
-async def idk2(ctx):
-	embed = discord.Embed(title="Welcome to Bonk.io Football League Discord Server!", description="BFL is launched in November of 2017. This is the official discord server of BFL. You can talk about anything here as long as it isn't disrespectful.", color=0xFF8C00)
-	await client.say(embed=embed)	
-	
-
-@client.command(pass_context=True)
-async def exdee(ctx):
-    embed = discord.Embed(description="", color=0xC9C9C9)
-    embed.add_field(name="Rules", value="You can talk about anything here as long as it isn't disrespectful. If you have a problem with anyone or anything in this server, please DM the Admins about it. \n \n 1. Rudeness, harassment, and immaturity will not be tolerated. \n 2. Porn and otherwise NSFW/NSFL content is prohibited. \n 3. No discussion about highly illegal activity. \n 4. Copyrighted and other unlawful material is prohibited, such as links to illegal content. \n 5. Advertising and promoting is prohibited. Don't even bother posting invite links because the bots will delete them anyway. \n 6. <#535451148090474497> is our main channel. Keep it clean. \n 7. No (random) links in the general chat <#535451148090474497> unless a moderator or higher lets you!")
-    await client.say(embed=embed)
-		
-@client.command(pass_context=True)
-async def div1(ctx):
-    embed = discord.Embed(description="", color=0xFF8C00)
-    embed.add_field(name="__1st Division__", value="1. Alex28102 :flag_ca: \n 2. Acquah :flag_it: \n 3. Dadem :flag_dz: \n 4. Frozenkiller :flag_nl: \n 5. aalaaprocks :flag_ie: \n 6. Shyrix :flag_fr: \n 7. Trocir :flag_rs:")
-    await client.say(embed=embed)
-	
-@client.command(pass_context=True)
-async def div3(ctx):
-    embed = discord.Embed(description="", color=0xFF8C00)
-    embed.add_field(name="__2nd Division__", value="1. Deus_ :flag_us: \n 2. Empirezz :flag_al: \n 3. King181 :flag_us: \n 4. Lxior :flag_us: \n 5. Shaun_ :flag_gb: \n 6. Tuccio :flag_us: \n 7. Warzen Rez :flag_us:")
-    await client.say(embed=embed)
-
-@client.command(pass_context=True)
-async def idk(ctx):
-    embed = discord.Embed(description="", color=0xC9C9C9)
-    msgg = embed.add_field(name="Roles", value="<@&535449445530075137> - Admins of the league \n <@&535498153378709504> - Referees. Ping them if u need one \n <@&535449391356575762> - The Staff Team \n <@&535449623947378708> Moderators \n <@&535449594491043841> - Bot Creator \n <@&535449576258273302> - Our Official Bot \n <@&535449518007648276> - Special people \n <@&535449546055090177> - League Players \n <@&535449658861027328> - Default role for everyone \n <@&535449699897835520> Role for our bots")
-    await client.say(embed=embed)	
-	
-@client.command(pass_context=True)
 async def xd(ctx):
 	embed = discord.Embed(title="", description="**Getting Started** \n - If you have any questions about BFL, feel free to ask us in <#535451148090474497> \n - If you want to join the League, contact Trocir#9999. \n - If you have any suggestions or requests, let us know in <#536932821520875530> by typing `-suggest [Your suggestion here]` in <#535451161998917655> \n \n - BFL is launched in November of 2017. This is the official discord server of BFL. You can talk about anything here as long as it isn't disrespectful. \n - The prefix for BFL Bot on this server is `-` which is also the default for the bot. \n - Our aim is to provide best experience possible for playing Bonk.io Football at a competitive level. \n \n **Rules** \n - You can talk about anything here as long as it isn't disrespectful. If you have a problem with anyone or anything in this server, please DM the Admins about it. \n 1. Rudeness, harassment, and immaturity will not be tolerated. \n 2. Porn and otherwise NSFW/NSFL content is prohibited. \n 3. No discussion about highly illegal activity. \n 4. Copyrighted and other unlawful material is prohibited, such as links to illegal content. \n 5. Advertising and promoting is prohibited. Don't even bother posting invite links because the bots will delete them anyway. \n 6. <#535451148090474497> is our main channel. Keep it clean. \n 7. No (random) links in the general chat <#535451148090474497> unless a moderator or higher lets you! \n - **Moderators may mute/kick/ban at their discretion.** \n \n **Links** \n [BFL Website](https://bonkfootballleague.wixsite.com/footballleague) \n [Youtube Channel](https://www.youtube.com/channel/UCYhjjzOPwfLMvQUwjEZi4gw?) \n [Add BFL Bot](https://discordapp.com/oauth2/authorize?client_id=432607914432135169&permissions=8&scope=bot)", color=0x3D59AB)
-	embed.add_field(name="Invite to this Server", value="https://discord.gg/THKd8cY")
+	embed.add_field(name="Invite to this Server", value="https://discord.gg/wsWMWCA")
 	embed.set_author(name="Welcome to the BFL Discord Server!", icon_url="https://images-ext-2.discordapp.net/external/WLXavXaSZmhfV9DuHJFBh0YcNbuUdtWLl1lJScKOqZo/https/cdn.discordapp.com/icons/533422792167915554/a052ef6b337317f7348c50730d8f1010.jpg?width=116&height=116")
 	await client.say(embed=embed)	
-
-@client.command(pass_context=True)
-async def xdxd(ctx):
-	embed = discord.Embed(title="Jokers F.C.", description="The most elite football club in bonk.io \n Led by elite players Tuccio |C|, Chiilzz and Coldrex", color=0xFF7256)
-	embed.add_field(name="Invite to this Server", value="[Click Here](https://discord.gg/akGqCUH)")
-	embed.set_footer(text="Partner")
-	await client.say(embed=embed)
 
 @client.command(pass_context=True)
 async def x(ctx):
