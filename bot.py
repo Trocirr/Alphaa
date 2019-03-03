@@ -179,10 +179,19 @@ async def vaga(ctx):
 @client.command(pass_context=True)
 async def vagaa(ctx):
 	embed = discord.Embed(title="", description="", color=0x3D59AB)
-	embed.add_field(name="Top 16", value="This is the top 16 best players who have competed in the 1v1 tournaments in this server judged by their scoring and performance by Trocir and TLJXEDO. Only players who have competed in the tournaments will be added here. \n \n Do not ask to be added or for your position to be changed.")
+	embed.add_field(name="", value="1.")
+	embed.set_author(name="Bonk.io - Football League", icon_url="https://images-ext-2.discordapp.net/external/WLXavXaSZmhfV9DuHJFBh0YcNbuUdtWLl1lJScKOqZo/https/cdn.discordapp.com/icons/533422792167915554/a052ef6b337317f7348c50730d8f1010.jpg?width=116&height=116")
+	embed.set_footer(text="BFL")
+	await client.say(embed=embed)
+	
+@client.command(pass_context=True)
+async def oko(ctx):
+	embed = discord.Embed(title="", description="", color=0x3D59AB)
+	embed.add_field(name="Top 30", value="This is the top 16 best players who have competed in the 1v1 tournaments in this server judged by their scoring and performance by Trocir and TLJXEDO. Only players who have competed in the tournaments will be added here. \n \n Do not ask to be added or for your position to be changed.")
 	embed.set_author(name="Bonk.io - Football League", icon_url="https://images-ext-2.discordapp.net/external/WLXavXaSZmhfV9DuHJFBh0YcNbuUdtWLl1lJScKOqZo/https/cdn.discordapp.com/icons/533422792167915554/a052ef6b337317f7348c50730d8f1010.jpg?width=116&height=116")
 	embed.set_footer(text="BFL")
 	await client.say(embed=embed)	
+	
 
 @client.command(pass_context=True, description='Shows the server info.')
 async def server(ctx):
