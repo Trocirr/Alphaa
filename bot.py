@@ -179,8 +179,8 @@ async def vaga(ctx):
 @client.command(pass_context=True)
 async def vagaa(ctx):
 	embed = discord.Embed(title="", description="", color=0x3D59AB)
-	embed.add_field(name="Rank", value="1. anxiety \n 3. General_Richt \n 5. Trocir \n 7. GSpeku \n 9. Zmudx \n \n 11. Leftright \n 13. le riz \n 15. \n 17. \n 19. \n \n 21. \n 23. \n 25. \n 27. \n 29.")
-	embed.add_field(name="Rank", value="2. lolwhat5011 \n 4. Nub1 \n 6. TLJXEDO \n 8. Trxior \n 10. selet \n \n 12. Bunniesss \n 14. frozenkiller \n 16. \n 18. \n 20. \n \n 22. \n 24. \n 26. \n 28. \n 30.")
+	embed.add_field(name="Rank", value="1. anxiety \n 3. General_Richt \n 5. Trocir \n 7. GSpeku \n 9. Zmudx \n \n 11. Leftright \n 13. le riz \n 15. Acquah \n 17. aalaaprocks \n 19. mesney \n \n 21. SxC Swish \n 23. alalalaaa07 \n 25. Tuccio \n 27. bartek0458 \n 29. TheAngryBull")
+	embed.add_field(name="Rank", value="2. lolwhat5011 \n 4. Nub1 \n 6. TLJXEDO \n 8. Trxior \n 10. selet \n \n 12. Bunniesss \n 14. frozenkiller \n 16. MicroHype \n 18. xSmurf \n 20. bbb86 \n \n 22. Alex2810 \n 24. Sm4cK \n 26. CommandX11 \n 28. Magician 1223 \n 30. scoregod")
 	embed.set_author(name="Bonk.io - Football League", icon_url="https://images-ext-2.discordapp.net/external/WLXavXaSZmhfV9DuHJFBh0YcNbuUdtWLl1lJScKOqZo/https/cdn.discordapp.com/icons/533422792167915554/a052ef6b337317f7348c50730d8f1010.jpg?width=116&height=116")
 	embed.set_footer(text="BFL")
 	await client.say(embed=embed)
