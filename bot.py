@@ -99,14 +99,14 @@ async def dmm(ctx, member: discord.Member, message: str):
     await client.send_message(member, message)	
 	
 @client.command(pass_context=True)
-async def xd(ctx):
+async def rulesxdxdxd(ctx):
 	embed = discord.Embed(title="", description="**Getting Started** \n - If you have any questions about BFL, feel free to ask us in <#535451148090474497> \n - If you want to join the League, contact Trocir#9999. \n - If you have any suggestions or requests, let us know in <#536932821520875530> by typing `-suggest [Your suggestion here]` in <#535451161998917655> \n \n - BFL is launched in November of 2017. This is the official discord server of BFL. You can talk about anything here as long as it isn't disrespectful. \n - The prefix for BFL Bot on this server is `-` which is also the default for the bot. \n - Our aim is to provide best experience possible for playing Bonk.io Football at a competitive level. \n \n **Rules** \n - You can talk about anything here as long as it isn't disrespectful. If you have a problem with anyone or anything in this server, please DM the Admins about it. \n 1. Rudeness, harassment, and immaturity will not be tolerated. \n 2. Porn and otherwise NSFW/NSFL content is prohibited. \n 3. No discussion about highly illegal activity. \n 4. Copyrighted and other unlawful material is prohibited, such as links to illegal content. \n 5. Advertising and promoting is prohibited. Don't even bother posting invite links because the bots will delete them anyway. \n 6. <#535451148090474497> is our main channel. Keep it clean. \n 7. No (random) links in the general chat <#535451148090474497> unless a moderator or higher lets you! \n - **Moderators may mute/kick/ban at their discretion.** \n \n **Links** \n [BFL Website](https://bonkfootballleague.wixsite.com/footballleague) \n [Youtube Channel](https://www.youtube.com/channel/UCYhjjzOPwfLMvQUwjEZi4gw?) \n [Add BFL Bot](https://discordapp.com/oauth2/authorize?client_id=432607914432135169&permissions=8&scope=bot)", color=0x3D59AB)
 	embed.add_field(name="Invite to this Server", value="https://discord.gg/wsWMWCA")
 	embed.set_author(name="Welcome to the BFL Discord Server!", icon_url="https://images-ext-2.discordapp.net/external/WLXavXaSZmhfV9DuHJFBh0YcNbuUdtWLl1lJScKOqZo/https/cdn.discordapp.com/icons/533422792167915554/a052ef6b337317f7348c50730d8f1010.jpg?width=116&height=116")
 	await client.say(embed=embed)	
 
 @client.command(pass_context=True)
-async def x(ctx):
+async def rebels(ctx):
 	embed = discord.Embed(title="", description="Rebels is one of he top clans right now with a 40-3 record held by the owner xhappyx and the captain aalaaprocks \n \n We are the first team to reach 40 wins in bonk io clan history (Fact) \n \n It has great players such as aalaaprocks, bartek0458, dadem and more! \n \n  It has a discord server with an active community. Join Rebels today!", color=0x00EEEE)
 	embed.add_field(name="Invite to this Server", value="[Click Here](https://discord.gg/xg6RGf8)")
 	embed.set_image(url="https://images-ext-2.discordapp.net/external/iJCCTnOnkmVXsRR0Gw64KUcXxY3saG3aHQwBEMZndGw/https/cdn.discordapp.com/icons/478304278121807892/a8d189b0f6659c7e3d7d8b9d34ed13de.jpg?width=103&height=103")
@@ -115,7 +115,7 @@ async def x(ctx):
 	await client.say(embed=embed)
 	
 @client.command(pass_context=True)
-async def xxx(ctx):
+async def roses(ctx):
 	embed = discord.Embed(title="", description=" Roses is one of the strongest clans currently in Bonk.io Football lead by xSmurf and Alex2810. \n \n It has one of the best war records currently standing at : 30-0! \n \n It has great players such as Nub1, Tuccio, xSmurf and more! \n \n It has a discord server with an active community \n \n Join roses today, the powerhouse clan of bonk.io!", color=0x00EEEE)
 	embed.add_field(name="Invite to this Server", value="[Click Here](https://discord.gg/rGfxT3b)")
 	embed.set_image(url="https://images-ext-2.discordapp.net/external/M2Cx7oPf1mK4jtQ-Boa-n-Xxfwfz0ZD78lkViHXg2dc/https/discordapp.com/api/guilds/515609188047519744/icons/43d75d5e16516179ce4247d109f917ec.jpg?width=103&height=103")
@@ -124,7 +124,7 @@ async def xxx(ctx):
 	await client.say(embed=embed)	
 	
 @client.command(pass_context=True)
-async def xx(ctx):
+async def defender(ctx):
 	embed = discord.Embed(title="", description="Defenders is one of the first and strongest clans in Bonk.io Football lead by Trocir and Coldrex. \n \n It has one of the best war records currently standing at : 16-0! \n \n It has great players such as Trocir, Acquah, Coldrex and more! \n \n It has a discord server with an active community. Join Defender today!", color=0x00EEEE)
 	embed.add_field(name="Invite to this Server", value="[Click Here](https://discord.gg/dSeCqsX)")
 	embed.set_image(url="https://images-ext-2.discordapp.net/external/yZ4NJS1Mly_-afnw43czyvSN6gshwZhPsg3MAHfuDKw/https/discordapp.com/api/guilds/548278128850501652/icons/7fd8f4f9059acbaed997d4742cde7665.jpg?width=103&height=103")
@@ -133,7 +133,7 @@ async def xx(ctx):
 	await client.say(embed=embed)	
 	
 @client.command(pass_context=True)
-async def xxxx(ctx):
+async def toxic(ctx):
 	embed = discord.Embed(title="", description="Toxic was one of the first clans in Bonk.io Football. \n \n It has the record of 14-0! \n \n It was made in April 2018. \n \n It has a discord server with an active community. Join Toxic today!", color=0x00EEEE)
 	embed.add_field(name="Invite to this Server", value="[Click Here](https://discord.gg/tGyENaX)")
 	embed.set_image(url="https://images-ext-2.discordapp.net/external/ySqdQONc5yRsTo0k0vp_yMiIqH2TFSC_TS55YgkftPk/https/discordapp.com/api/guilds/548931059027279885/icons/3a14d7b362fa639baa9fcb3608c94bf4.jpg?width=103&height=103")
@@ -160,11 +160,20 @@ async def vaga(ctx):
 @client.command(pass_context=True)
 async def vagaa(ctx):
 	embed = discord.Embed(title="", description="", color=0x3D59AB)
-	embed.add_field(name="Rank", value="1. anxiety \n 3. General_Richt \n 5. Trocir \n 7. GSpeku \n 9. Zmudx \n \n 11. Leftright \n 13. le riz \n 15. Acquah \n 17. aalaaprocks \n 19. mesney \n \n 21. SxC Swish \n 23. alalalaaa07 \n 25. Tuccio \n 27. bartek0458 \n 29. TheAngryBull")
+	embed.add_field(name="Rank", value="1. anxiety \n 3. General_Richt \n 5. Trocir \n 7. GSpeku \n 9. zmudx \n \n 11. leftright \n 13. le riz \n 15. Acquah \n 17. aalaaprocks \n 19. mesney \n \n 21. SxC Swish \n 23. alalalaaa07 \n 25. Tuccio \n 27. bartek0458 \n 29. TheAngryBull")
 	embed.add_field(name="Rank", value="2. lolwhat5011 \n 4. Nub1 \n 6. TLJXEDO \n 8. Trxior \n 10. selet \n \n 12. Bunniesss \n 14. frozenkiller \n 16. MicroHype \n 18. xSmurf \n 20. bbb86 \n \n 22. Alex2810 \n 24. Sm4cK \n 26. CommandX11 \n 28. Magician 1223 \n 30. scoregod")
 	embed.set_author(name="Bonk.io - Football League", icon_url="https://images-ext-2.discordapp.net/external/WLXavXaSZmhfV9DuHJFBh0YcNbuUdtWLl1lJScKOqZo/https/cdn.discordapp.com/icons/533422792167915554/a052ef6b337317f7348c50730d8f1010.jpg?width=116&height=116")
 	embed.set_footer(text="All Time")
 	await client.say(embed=embed)
+	
+@client.command(pass_context=True)
+async def vagaaa(ctx):
+	embed = discord.Embed(title="", description="", color=0x3D59AB)
+	embed.add_field(name="Rank", value="1. anxiety \n 3. General_Richt \n 5. Trocir \n 7. GSpeku \n 9. zmudx \n \n 11. leftright \n 13. le riz \n 15. Acquah \n 17. aalaaprocks \n 19. mesney \n \n 21. SxC Swish \n 23. alalalaaa07 \n 25. Tuccio \n 27. bartek0458 \n 29. TheAngryBull")
+	embed.add_field(name="Rank", value="2. lolwhat5011 \n 4. Nub1 \n 6. TLJXEDO \n 8. Trxior \n 10. selet \n \n 12. Bunniesss \n 14. frozenkiller \n 16. MicroHype \n 18. xSmurf \n 20. bbb86 \n \n 22. Alex2810 \n 24. Sm4cK \n 26. CommandX11 \n 28. Magician 1223 \n 30. scoregod")
+	embed.set_author(name="Bonk.io - Football League", icon_url="https://images-ext-2.discordapp.net/external/WLXavXaSZmhfV9DuHJFBh0YcNbuUdtWLl1lJScKOqZo/https/cdn.discordapp.com/icons/533422792167915554/a052ef6b337317f7348c50730d8f1010.jpg?width=116&height=116")
+	embed.set_footer(text="All Time")
+	await client.say(embed=embed)	
 	
 @client.command(pass_context=True)
 async def oko(ctx):
@@ -174,25 +183,6 @@ async def oko(ctx):
 	embed.set_footer(text="BFL")
 	await client.say(embed=embed)	
 	
-
-@client.command(pass_context=True, description='Shows the server info.')
-async def server(ctx):
-    embed = discord.Embed(description="<:Members:468729005273776128> Here's what I could find:", color=0x00ff00)
-    embed.add_field(name="Name", value=ctx.message.server.name)
-    embed.add_field(name="Owner", value=ctx.message.server.owner)
-    embed.add_field(name="Region", value=ctx.message.server.region)
-    embed.add_field(name="Roles", value=len(ctx.message.server.roles))
-    embed.add_field(name="Members", value=len(ctx.message.server.members))
-    embed.add_field(name="Channels", value=len(ctx.message.server.channels))
-    embed.set_thumbnail(url=ctx.message.server.icon_url)
-    utc_dt = datetime.now(timezone.utc)
-    p = utc_dt.strftime('     Time - %H:%M:%S | Date - %d/%m/%Y')
-    utc = str(p)    
-    a=ctx.message.author
-    txt= str(a) + " | " + str(utc)
-    embed.set_footer(text=txt, icon_url=ctx.message.author.avatar_url)
-    await client.say(embed=embed)
-
 @client.command(pass_context=True, description='Shows the server info.')
 async def serverinfo(ctx):
     embed = discord.Embed(title="", description="", color=0x6A7A94)
@@ -226,24 +216,6 @@ async def userinfo(ctx, user: discord.Member):
     txt = user.id
     embed.set_footer(text="User ID: "+txt)
     await client.say(embed=embed)
-
-@client.command(pass_context=True)
-async def info(ctx, user: discord.Member):
-    embed = discord.Embed(title="{}'s info".format(user.name), description="Here's what I could find:", color=0x00ff00)
-    embed.add_field(name="Name", value=user.name, inline=True)
-    embed.add_field(name="Status", value=user.status, inline=True)
-    embed.add_field(name="Top Role", value=user.top_role.mention)
-    embed.add_field(name="Joined at",value=user.joined_at)
-    embed.add_field(name="ID", value=user.id, inline=True)
-    embed.set_thumbnail(url = user.avatar_url)
-    utc_dt = datetime.now(timezone.utc)
-    p = utc_dt.strftime('     Time - %H:%M:%S | Date - %d/%m/%Y')
-    utc = str(p)    
-    a=ctx.message.author
-    txt= str(a) + " | " + str(utc)
-    embed.set_footer(text=txt, icon_url=ctx.message.author.avatar_url)    
-    await client.say(embed=embed)
-	
 	
 @client.command(pass_context=True)
 async def about(ctx):
