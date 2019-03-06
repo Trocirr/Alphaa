@@ -193,153 +193,39 @@ async def server(ctx):
     embed.set_footer(text=txt, icon_url=ctx.message.author.avatar_url)
     await client.say(embed=embed)
 
+@client.command(pass_context=True, description='Shows the server info.')
+async def serverinfo(ctx):
+    embed = discord.Embed(title="", description="", color=0x6A7A94)
+    embed.add_field(name="Owner", value=ctx.message.server.owner)
+    embed.add_field(name="Region", value=ctx.message.server.region)
+    embed.add_field(name="Roles", value=len(ctx.message.server.roles))
+    embed.add_field(name="Members", value=len(ctx.message.server.members))
+    embed.add_field(name="Channels", value=len(ctx.message.server.channels))
+    embed.add_field(name="Number of emotes", value=len(ctx.message.server.emojis))
+    embed.add_field(name="Verification", value=str(ctx.message.server.verification_level))
+    embed.add_field(name="Created at", value=ctx.message.server.created_at.__format__('%d. %B %Y %H:%M:%S'))
+    embed.set_thumbnail(url=ctx.message.server.icon_url)
+    xd = ctx.message.server.name
+    embed.set_author(name=xd, icon_url = ctx.message.server.icon_url)
+    txt = ctx.message.server.id
+    embed.set_footer(text="Server ID: "+txt)
+    await client.say(embed=embed)
+
+
 @client.command(pass_context=True)
-async def test123(ctx):
-	msg = await client.say("no")
-	await client.edit_message(msg, "hi")
-
-@client.command(pass_context=True)
-async def lalaeeeeeeeeeeeeeeeeeeeeeee(ctx):
-	msg = await client.say("macro")
-	await client.edit_message(msg, "maxxxxxxro LOL")
-
-@client.command(pass_context=True)
-async def verify(ctx):
-	embed = discord.Embed(title="Verification", description="Head over to DM to complete the verification.", color=0x3D59AB)
-	await client.say(embed=embed)
-
-@client.command(pass_context=True, description='Shows the server info.')
-async def link(ctx):
-    embed = discord.Embed(description="[Marto's sister](https://discordapp.com) LOL, Follow marto's mom on pornhub [click here](https://pornhub.com) FOLLOW RULES, NO SWEARING SHIT TOXIC NIGGA RACIST OR SOMETHING MORE \n \n \n HAVE FUN", color=0x00ff00)
+async def userinfo(ctx, user: discord.Member):
+    embed = discord.Embed(title="", description=user.mention, color=0x9B8DC2)
+    embed.add_field(name="Nick", value=user.nick, inline=True)
+    embed.add_field(name="Status", value=user.status, inline=True)
+    embed.add_field(name="Top Role", value=user.top_role.mention)
+    embed.add_field(name="Joined", value=user.joined_at.__format__('%A, %d. %B %Y %H:%M:%S'))
+    embed.add_field(name="Registered", value=user.created_at.__format__('%A, %d. %B %Y %H:%M:%S'))
+    embed.set_thumbnail(url = user.avatar_url)
+    a = ctx.message.author
+    embed.set_author(name=a, icon_url = ctx.message.author.avatar_url)
+    txt = user.id
+    embed.set_footer(text="User ID: "+txt)
     await client.say(embed=embed)
-
-@client.command(pass_context=True, description='Shows the server info.')
-async def trocir(ctx):
-    embed = discord.Embed(description="__**Trocir's stats :flag_rs:**__", color=0x00ff00)
-    embed.add_field(name="Team", value="-")
-    embed.add_field(name="Goals", value="-")
-    embed.add_field(name="Assists", value="-")
-    embed.add_field(name="Matches played", value="-")
-    embed.set_thumbnail(url='https://cdn.discordapp.com/emojis/532692198114721822.png?v=1')
-    await client.say(embed=embed)
-
-
-@client.command(pass_context=True, description='Shows the server info.')
-async def nub1(ctx):
-    embed = discord.Embed(description="__**Nub1's stats :flag_lb:**__", color=0x00ff00)
-    embed.add_field(name="Team", value="Requiem")
-    embed.add_field(name="Goals", value="4")
-    embed.add_field(name="Matches played", value="1")
-    embed.set_thumbnail(url='https://cdn.discordapp.com/emojis/536202285131235358.png?v=1')
-    await client.say(embed=embed)
-
-@client.command(pass_context=True, description='Shows the server info.')
-async def lyhnx(ctx):
-    embed = discord.Embed(description="__**Lyhnx's stats :flag_gb:**__", color=0x00ff00)
-    embed.add_field(name="Team", value="Requiem")
-    embed.add_field(name="Goals", value="3")
-    embed.add_field(name="Matches played", value="1")
-    embed.set_thumbnail(url='https://cdn.discordapp.com/emojis/536202285131235358.png?v=1')
-    await client.say(embed=embed)
-
-@client.command(pass_context=True, description='Shows the server info.')
-async def llj(ctx):
-    embed = discord.Embed(description="__**LLJ's stats :flag_gb:**__", color=0x00ff00)
-    embed.add_field(name="Team", value="Violets")
-    embed.add_field(name="Goals", value="3")
-    embed.add_field(name="Matches played", value="1")
-    embed.set_thumbnail(url='https://cdn.discordapp.com/emojis/536239388720627715.png?v=1')
-    await client.say(embed=embed)
-
-
-@client.command(pass_context=True, description='Shows the server info.')
-async def acquah(ctx):
-    embed = discord.Embed(description="__**Acquah's stats :flag_it:**__", color=0x00ff00)
-    embed.add_field(name="Team", value="Atletico Zero")
-    embed.add_field(name="Goals", value="3")
-    embed.add_field(name="Matches played", value="1")
-    embed.set_thumbnail(url='https://cdn.discordapp.com/emojis/532692198114721822.png?v=1')
-    await client.say(embed=embed)
-
-@client.command(pass_context=True, description='Shows the server info.')
-async def nub0(ctx):
-    embed = discord.Embed(description="__**Nub 0's stats :flag_dz:**__", color=0x00ff00)
-    embed.add_field(name="Team", value="Legends")
-    embed.add_field(name="Goals", value="1")
-    embed.add_field(name="Matches played", value="1")
-    embed.set_thumbnail(url='https://cdn.discordapp.com/emojis/534051996303622145.png?v=1')
-    await client.say(embed=embed)
-
-@client.command(pass_context=True, description='Shows the server info.')
-async def aalaaprocks(ctx):
-    embed = discord.Embed(description="__**aalaaprocks's stats :flag_ie:**__", color=0x00ff00)
-    embed.add_field(name="Team", value="Blaugrana")
-    embed.add_field(name="Goals", value="14")
-    embed.add_field(name="Matches played", value="2")
-    embed.set_thumbnail(url='https://cdn.discordapp.com/emojis/534048933631229962.png?v=1')
-    await client.say(embed=embed)
-
-
-@client.command(pass_context=True, description='Shows the server info.')
-async def atleticozero(ctx):
-    embed = discord.Embed(description="__**Atletico Zero**__", color=0x00ff00)
-    embed.add_field(name="Captain", value="Acquah")
-    embed.add_field(name="Trophies", value="0")
-    embed.add_field(name="Wins", value="0")
-    embed.add_field(name="Loss", value="1")
-    embed.add_field(name="Draws", value="0")
-    embed.add_field(name="Matches played", value="1")
-    embed.set_thumbnail(url='https://cdn.discordapp.com/emojis/532692198114721822.png?v=1')
-    await client.say(embed=embed)
-	
-@client.command(pass_context=True, description='Shows the server info.')
-async def blaugrana(ctx):
-    embed = discord.Embed(description="__**Blaugrana**__", color=0x00ff00)
-    embed.add_field(name="Captain", value="aalaaprocks")
-    embed.add_field(name="Trophies", value="1")
-    embed.add_field(name="Wins", value="2")
-    embed.add_field(name="Loss", value="0")
-    embed.add_field(name="Draws", value="0")
-    embed.add_field(name="Matches played", value="2")
-    embed.set_thumbnail(url='https://cdn.discordapp.com/emojis/534048933631229962.png?v=1')
-    await client.say(embed=embed)
-
-@client.command(pass_context=True, description='Shows the server info.')
-async def legends(ctx):
-    embed = discord.Embed(description="__**Legends**__", color=0x00ff00)
-    embed.add_field(name="Captain", value="Nub 0")
-    embed.add_field(name="Trophies", value="0")
-    embed.add_field(name="Wins", value="0")
-    embed.add_field(name="Loss", value="1")
-    embed.add_field(name="Draws", value="0")
-    embed.add_field(name="Matches played", value="1")
-    embed.set_thumbnail(url='https://cdn.discordapp.com/emojis/534051996303622145.png?v=1')
-    await client.say(embed=embed)
-
-@client.command(pass_context=True, description='Shows the server info.')
-async def violets(ctx):
-    embed = discord.Embed(description="__**Violets**__", color=0x00ff00)
-    embed.add_field(name="Captain", value="LLJ")
-    embed.add_field(name="Trophies", value="0")
-    embed.add_field(name="Wins", value="0")
-    embed.add_field(name="Loss", value="1")
-    embed.add_field(name="Draws", value="0")
-    embed.add_field(name="Matches played", value="1")
-    embed.set_thumbnail(url='https://cdn.discordapp.com/emojis/536239388720627715.png?v=1')
-    await client.say(embed=embed)	
-
-@client.command(pass_context=True, description='Shows the server info.')
-async def requiem(ctx):
-    embed = discord.Embed(description="__**Requiem**__", color=0x00ff00)
-    embed.add_field(name="Captain", value="Lyhnx")
-    embed.add_field(name="Trophies", value="1")
-    embed.add_field(name="Wins", value="1")
-    embed.add_field(name="Loss", value="0")
-    embed.add_field(name="Draws", value="0")
-    embed.add_field(name="Matches played", value="1")
-    embed.set_thumbnail(url='https://cdn.discordapp.com/emojis/536202285131235358.png?v=1')
-    await client.say(embed=embed)
-
 
 @client.command(pass_context=True)
 async def info(ctx, user: discord.Member):
