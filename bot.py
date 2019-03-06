@@ -109,8 +109,8 @@ async def rulesxdxdxd(ctx):
 async def rebels(ctx):
 	embed = discord.Embed(title="", description="Rebels is one of he top clans right now with a 40-3 record held by the owner xhappyx and the captain aalaaprocks \n \n We are the first team to reach 40 wins in bonk io clan history (Fact) \n \n It has great players such as aalaaprocks, bartek0458, dadem and more! \n \n  It has a discord server with an active community. Join Rebels today!", color=0x00EEEE)
 	embed.add_field(name="Invite to this Server", value="[Click Here](https://discord.gg/xg6RGf8)")
-	embed.set_image(url="https://images-ext-2.discordapp.net/external/iJCCTnOnkmVXsRR0Gw64KUcXxY3saG3aHQwBEMZndGw/https/cdn.discordapp.com/icons/478304278121807892/a8d189b0f6659c7e3d7d8b9d34ed13de.jpg?width=103&height=103")
-	embed.set_author(name="Rebels", icon_url="https://images-ext-2.discordapp.net/external/iJCCTnOnkmVXsRR0Gw64KUcXxY3saG3aHQwBEMZndGw/https/cdn.discordapp.com/icons/478304278121807892/a8d189b0f6659c7e3d7d8b9d34ed13de.jpg?width=103&height=103")
+	embed.set_image(url="https://media.discordapp.net/attachments/468414226575130637/552957652603240634/Rebels_Partners.PNG?width=299&height=66")
+	embed.set_author(name="Rebels", icon_url="https://media.discordapp.net/attachments/468414226575130637/552957652603240634/Rebels_Partners.PNG?width=299&height=66")
 	embed.set_footer(text="Partner")
 	await client.say(embed=embed)
 	
