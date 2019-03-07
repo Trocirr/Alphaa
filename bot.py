@@ -250,7 +250,7 @@ async def avatar(ctx, user: discord.Member):
 	
 	
 @client.command(pass_context=True)
-@commands.cooldown(1, 10, commands.BucketType.user)
+@commands.cooldown(1, 5, commands.BucketType.user)
 async def multi(ctx, a,b):
 	c=int(a) * int(b)
 	s=str(c)
@@ -259,7 +259,7 @@ async def multi(ctx, a,b):
 	
 	
 @client.command(pass_context=True)
-@commands.cooldown(1, 10, commands.BucketType.user)
+@commands.cooldown(1, 5, commands.BucketType.user)
 async def sub(ctx, a,b):
 	c=int(a) - int(b)
 	s=str(c)
@@ -268,7 +268,7 @@ async def sub(ctx, a,b):
 	
 	
 @client.command(pass_context=True)
-@commands.cooldown(1, 10, commands.BucketType.user)
+@commands.cooldown(1, 5, commands.BucketType.user)
 async def add(ctx, a,b):
 	c=int(a) + int(b)
 	s=str(c)
@@ -277,7 +277,7 @@ async def add(ctx, a,b):
 	
 	
 @client.command(pass_context=True)
-@commands.cooldown(1, 10, commands.BucketType.user)
+@commands.cooldown(1, 5, commands.BucketType.user)
 async def div(ctx, a,b):
 	c=int(a) / int(b)
 	s=str(c)
@@ -286,6 +286,7 @@ async def div(ctx, a,b):
 	
 	
 @client.command(pass_context=True)
+@commands.cooldown(1, 3, commands.BucketType.user)
 async def choose(ctx,message):
 	x=message.split("/")
 	await client.say(":thinking:  |  I choose: "+ "**"+ random.choice(x) +"**!")
