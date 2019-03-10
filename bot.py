@@ -218,14 +218,15 @@ async def userinfo(ctx, user: discord.Member):
     await client.say(embed=embed)
 	
 @client.command(pass_context=True)
-async def about(ctx):
-    embed = discord.Embed(title="__About BFL__", description="© 2019 BFL Bot All Rights Reserved", color=0x00ff00)
-    embed.add_field(name="Original Creators", value="Trocir#9999 & Mes#0010")
+async def credits(ctx):
+    embed = discord.Embed(title="BFL", description="© 2019 BFL Bot All Rights Reserved", color=0x00EEEEE)
+    embed.add_field(name="Original Creators", value="Trocir#9999 & Mes#6130")
     embed.add_field(name="Server count", value=str(len(client.servers)))
+    embed.add_field(name="Date of creation", value="04/08/2018")
     embed.add_field(name="User count", value=str(len(list(client.get_all_members()))))
     embed.add_field(name="Channel count",value=str(len(list(client.get_all_channels()))))
-    embed.add_field(name="API", value="Python")
-    embed.set_thumbnail(url='https://media.discordapp.net/attachments/534665657107611663/535158629230313482/BFL.PNG?width=158&height=176')
+    embed.add_field(name="API", value="discord.py")
+    embed.set_thumbnail(url='https://media.discordapp.net/attachments/468414226575130637/554398599878803460/BFL_Bot.png?width=185&height=185')
     utc_dt = datetime.now(timezone.utc)
     p = utc_dt.strftime('     Time - %H:%M:%S | Date - %d/%m/%Y')
     utc = str(p)    
