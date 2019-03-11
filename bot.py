@@ -78,6 +78,7 @@ async def ban(ctx, userName: discord.User):
     await client.say(embed=embed)
 
 @client.command(pass_context=True)
+@commands.cooldown(1, 3, commands.BucketType.user)
 async def purge(ctx, *, amount : int):
     id_list = ['399567243744116738']
     if ctx.message.author.id in id_list:
@@ -179,6 +180,7 @@ async def oko(ctx):
 	await client.say(embed=embed)	
 	
 @client.command(pass_context=True, description='Shows the server info.')
+@commands.cooldown(1, 3, commands.BucketType.user)
 async def serverinfo(ctx):
     embed = discord.Embed(title="", description="", color=0x6A7A94)
     embed.add_field(name="Owner", value=ctx.message.server.owner)
@@ -198,6 +200,7 @@ async def serverinfo(ctx):
 
 
 @client.command(pass_context=True)
+@commands.cooldown(1, 3, commands.BucketType.user)
 async def userinfo(ctx, user: discord.Member):
     embed = discord.Embed(title="", description=user.mention, color=0x9B8DC2)
     embed.add_field(name="Nick", value=user.nick, inline=True)
@@ -213,6 +216,7 @@ async def userinfo(ctx, user: discord.Member):
     await client.say(embed=embed)
 	
 @client.command(pass_context=True)
+@commands.cooldown(1, 5, commands.BucketType.user)
 async def credits(ctx):
     embed = discord.Embed(title="BFL", description="© 2019 BFL Bot All Rights Reserved", color=0x00EEEEE)
     embed.add_field(name="Original Creators", value="Trocir#9999 & Mes#6130")
@@ -232,6 +236,7 @@ async def credits(ctx):
 		
 
 @client.command(pass_context=True)
+@commands.cooldown(1, 3, commands.BucketType.user)
 async def avatar(ctx, user: discord.Member):
     embed = discord.Embed(title="{}'s avatar".format(user.name), color=0x00BFFF)
     embed.set_image(url = user.avatar_url)
