@@ -71,6 +71,7 @@ async def kick(ctx, userName: discord.User):
 	await client.say(embed=embed)
 
 @client.command(pass_context = True)
+@commands.cooldown(1, 3, commands.BucketType.user)
 @commands.has_permissions(ban_members=True)
 async def ban(ctx, userName: discord.User):
     await client.ban(userName)
