@@ -61,10 +61,6 @@ async def mute(ctx, member: discord.Member):
 async def pingg(ctx):
 	msg = await client.say("Pong! :ping_pong:")
 	await client.edit_message(msg, random.randint(150,340))
-	
-Import discord
-Import time
-
 
 @Client.command(pass_context=True)
 async def ping(ctx):
