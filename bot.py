@@ -45,18 +45,10 @@ async def time(ctx):
 	embed = discord.Embed(description="", color=0xFF0000)
 	embed.add_field(name=":stopwatch: **Current Local Time and Date in the United Kingdom**", value=utc)
 	await client.say(embed=embed)	
-		
+
 @client.command(pass_context=True)
-async def alert(ctx, *, args):
-    try:
-        embed=discord.Embed(timestamp=datetime.datetime.utcnow(), color=0x36393E)
-        embed.add_field(name="Announcement:", value="'{}'".format(args))
-        embed.set_footer(text="{}.".format(ctx.message.author))
-        await client.say(embed=embed)
-        msg=await client.say("@everyone")
-        await client.delete_message(msg)
-    except:
-        await client.say("You need ``administrator`` permissions.")
+async def nigger(ctx, *, msg):
+    await client.say(msg)
 
 @client.command(pass_context = True)
 async def mute(ctx, member: discord.Member):
