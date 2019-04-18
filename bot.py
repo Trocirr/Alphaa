@@ -48,7 +48,7 @@ async def time(ctx):
 
 @client.command(pass_context=True)
 async def nigger(ctx, *, msg):
-	if ctx.message.content[7:] =="":
+	if ctx.message.content[6:] =="":
 		await client.say("type something in noob")
 	else:
     		await client.say(msg)
