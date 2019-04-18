@@ -47,7 +47,6 @@ async def time(ctx):
 	await client.say(embed=embed)	
 		
 @client.command(pass_context=True)
-@commands.has_permissions(administrator=True)
 async def alert(ctx, *, args):
     try:
         embed=discord.Embed(timestamp=datetime.datetime.utcnow(), color=0x36393E)
