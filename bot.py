@@ -52,7 +52,6 @@ async def announec(ctx, *, msg):
 		await client.send_message(message.channel, "Error. Type in an announcement.")
 	else:
     		await client.send_message(message.channel, "Your suggestion has been sent successfully!")
-		args = message.content.split(" ")
 		channel=client.get_channel('568135270210207755')		
 		embed = discord.Embed(title='', color=0x3391D0)
 		abc = "```
