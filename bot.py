@@ -59,8 +59,8 @@ async def mute(ctx, member: discord.Member):
 
 @client.command(pass_context=True)
 async def ping(ctx):
-	msg = await client.say("Checking ping..")
-	await client.edit_message(msg, "nigger"  +random.randint(150,340))
+	await client.say("Checking ping..")
+	await client.edit_message( "nigger" +random.randint(150,340))
 
 
 @client.command(pass_context = True)
