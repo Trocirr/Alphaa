@@ -47,11 +47,20 @@ async def time(ctx):
 	await client.say(embed=embed)	
 
 @client.command(pass_context=True)
-async def announcee(ctx, *, msg):
-	if ctx.message.content[10:] =="":
-		await client.say("type something in noob")
+async def announec(ctx, *, msg):
+	if ctx.message.content[9:] =="":
+		await client.send_message(message.channel, "Error. Type in an announcement.")
 	else:
-    		await client.say(msg)
+    		await client.send_message(message.channel, "Your suggestion has been sent successfully!")
+		args = message.content.split(" ")
+		channel=client.get_channel('568135270210207755')		
+		embed = discord.Embed(title='', color=0x3391D0)
+		abc = "```
+		embed.add_field(name="Announcement", value=abc +msg +abc)
+		a=await client.send_message(channel, embed=embed)
+		await client.add_reaction(a, "👍")
+		await client.add_reaction(a, "👎")
+
 
 @client.command(pass_context = True)
 async def mute(ctx, member: discord.Member):
