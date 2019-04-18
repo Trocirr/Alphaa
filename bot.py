@@ -51,12 +51,11 @@ async def announec(ctx, *, msg):
 	if ctx.message.content[9:] =="":
 		await client.send_message(message.channel, "Error. Type in an announcement.")
 	else:
-    		await client.send_message(message.channel, "Your suggestion has been sent successfully!")
-		channel=client.get_channel('568135270210207755')		
+    		await client.send_message(message.channel, "Your suggestion has been sent successfully!")		
 		embed = discord.Embed(title='', color=0x3391D0)
 		abc = "```
 		embed.add_field(name="Announcement", value=abc +msg +abc)
-		a=await client.send_message(channel, embed=embed)
+		a=await client.send_message(client.get_channel('568135270210207755'), embed=embed)
 		await client.add_reaction(a, "👍")
 		await client.add_reaction(a, "👎")
 
